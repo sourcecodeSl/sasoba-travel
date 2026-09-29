@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-brand: 'Poppins', 'Inter', ui-sans-serif, sans-serif;
+
+  --color-navy-950: #060f1e;
+  --color-navy-900: #0a192f;
+  --color-navy-800: #1a365d;
+  --color-teal: #0d9488;
+  --color-emerald: #10b981;
+  --color-gold: #f59e0b;
+  --color-sun: #fbbf24;
+  --color-sunset: #f97316;
+  --color-porcelain: #fafafa;
+  --color-cream: #f7f3ea;
+
+  --shadow-luxe: 0 30px 60px -20px rgb(10 25 47 / 0.35), 0 12px 24px -12px rgb(10 25 47 / 0.25);
+  --shadow-glow: 0 0 0 1px rgb(251 191 36 / 0.25), 0 20px 50px -15px rgb(245 158 11 / 0.45);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-porcelain font-sans text-navy-900 antialiased;
+  }
+  ::selection {
+    background: #fbbf24;
+    color: #0a192f;
+  }
+}
+
+@utility glass {
+  background: rgb(255 255 255 / 0.08);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgb(255 255 255 / 0.14);
+}
+
+@utility glass-dark {
+  background: rgb(10 25 47 / 0.72);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgb(255 255 255 / 0.1);
+}
+
+@utility text-feather {
+  background-image: linear-gradient(100deg, #fbbf24 0%, #f97316 30%, #10b981 65%, #0d9488 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-feather {
+  background-image: linear-gradient(120deg, #0d9488 0%, #10b981 35%, #f59e0b 75%, #f97316 100%);
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Footer horizon */
+@keyframes fh-wave {
+  to {
+    transform: translateX(-1440px);
+  }
+}
+@keyframes fh-fly {
+  from {
+    transform: translateX(-12vw) translateY(0);
+  }
+  50% {
+    transform: translateX(50vw) translateY(-14px);
+  }
+  to {
+    transform: translateX(112vw) translateY(6px);
+  }
+}
+@keyframes fh-flap {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.35);
+  }
+}
+@keyframes fh-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(8deg);
+  }
+}
+@keyframes fh-shimmer {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scaleX(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
