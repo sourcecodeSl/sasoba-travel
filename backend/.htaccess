@@ -1,0 +1,6 @@
+# Only /api and /uploads are public. Config, source and database scripts stay private.
+Options -Indexes
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(config\.php|config\.local\.php|src/|database/) - [F,L]
+</IfModule>

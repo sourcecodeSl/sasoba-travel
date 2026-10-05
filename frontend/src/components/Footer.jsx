@@ -74,7 +74,7 @@ function Newsletter() {
               Free Travel Guide
             </motion.p>
             <motion.h3 variants={item} className="mt-4 font-display text-3xl leading-tight font-semibold text-balance text-white sm:text-4xl">
-              The Insider’s Guide to Ceylon — <em className="text-feather">yours free</em>
+              The Insider’s Guide to Ceylon, <em className="text-feather">yours free</em>
             </motion.h3>
             <motion.p variants={item} className="mt-3 text-sm text-white/65">
               48 pages of hidden beaches, seasonal wildlife calendars and secret tables. Join our letter for instant access.
@@ -155,7 +155,7 @@ function Newsletter() {
                   </motion.button>
                 </motion.div>
                 <p className={`mt-3 px-4 text-xs ${status === 'error' ? 'text-sunset' : 'text-white/40'}`}>
-                  {status === 'error' ? 'Please enter a valid email address.' : 'No spam — one beautiful letter a month. Unsubscribe anytime.'}
+                  {status === 'error' ? 'Please enter a valid email address.' : 'No spam, just one beautiful letter a month. Unsubscribe anytime.'}
                 </p>
               </motion.form>
             )}
@@ -255,10 +255,10 @@ export default function Footer() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end end'] });
 
   const socials = [
-    { Icon: InstagramIcon, label: 'Instagram', href: 'https://instagram.com/' },
-    { Icon: FacebookIcon, label: 'Facebook', href: 'https://facebook.com/' },
-    { Icon: YouTubeIcon, label: 'YouTube', href: 'https://youtube.com/' },
-  ];
+    { Icon: InstagramIcon, label: 'Instagram', href: CONTACT.instagram },
+    { Icon: FacebookIcon, label: 'Facebook', href: CONTACT.facebook },
+    { Icon: YouTubeIcon, label: 'YouTube', href: CONTACT.youtube },
+  ].filter((s) => s.href);
 
   return (
     <>
@@ -288,7 +288,7 @@ export default function Footer() {
             </Link>
             </motion.div>
             <motion.p variants={item} className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
-              Bespoke, eco-luxury journeys across Sri Lanka and beyond — crafted with the colour, grace and royal hospitality of the peacock.
+              Bespoke, eco-luxury journeys across Sri Lanka and beyond, crafted with the colour, grace and royal hospitality of the peacock.
             </motion.p>
             <motion.ul variants={container(0.08)} className="mt-6 space-y-3 text-sm text-white/70">
               <motion.li variants={item} className="flex items-center gap-3">

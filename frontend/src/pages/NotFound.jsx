@@ -12,7 +12,7 @@ export default function NotFound() {
         </motion.div>
         <p className="mt-8 text-xs font-semibold uppercase tracking-[0.3em] text-sun">404</p>
         <h1 className="mt-3 font-display text-5xl font-semibold">This path wandered off</h1>
-        <p className="mt-4 max-w-md text-white/65">The page you’re looking for doesn’t exist — but plenty of beautiful places do.</p>
+        <p className="mt-4 max-w-md text-white/65">The page you’re looking for doesn’t exist, but plenty of beautiful places do.</p>
         <Link
           to="/"
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold to-sunset px-6 py-3 text-sm font-semibold text-navy-900"

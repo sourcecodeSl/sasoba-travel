@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CalendarDays, Check, Mail, MapPin, X } from 'lucide-react';
+import { ArrowLeft, CalendarDays, Check, Mail, MapPin, Send, X } from 'lucide-react';
 import { CONTACT, PACKAGES, findPackage, whatsappLink } from '../data/siteData.js';
 import { findDestination } from '../data/destinations.js';
 import { useLocale } from '../context/CurrencyContext.jsx';
@@ -12,6 +13,7 @@ import SectionHeading from '../components/ui/SectionHeading.jsx';
 import Reveal from '../components/ui/Reveal.jsx';
 import Stars from '../components/ui/Stars.jsx';
 import { TripadvisorBadge, WhatsAppIcon } from '../components/ui/BrandIcons.jsx';
+import EnquiryModal from '../components/enquiry/EnquiryModal.jsx';
 import NotFound from './NotFound.jsx';
 
 const INCLUDED = [
@@ -27,12 +29,13 @@ const EXCLUDED = ['International flights', 'Visa (ETA)', 'Lunches & dinners unle
 export default function JourneyDetail() {
   const { id } = useParams();
   const { formatPrice } = useLocale();
+  const [enquire, setEnquire] = useState(false);
   const pkg = findPackage(id);
   if (!pkg) return <NotFound />;
 
   const places = (pkg.destinations || []).map(findDestination).filter(Boolean);
   const others = PACKAGES.filter((p) => p.id !== pkg.id && p.styles.some((s) => pkg.styles.includes(s))).slice(0, 3);
-  const message = `Hello Sasoba Travels! I'd love to know more about "${pkg.title}" (${pkg.days} days, from ${formatPrice(pkg.priceFrom)} pp).`;
+  const message = `Hello Sasoba Travels! I'd love to know more about "${pkg.title}" (${pkg.days} days${pkg.priceFrom > 0 ? `, from ${formatPrice(pkg.priceFrom)} pp` : ''}).`;
 
   return (
     <>
@@ -40,13 +43,13 @@ export default function JourneyDetail() {
         image={pkg.image}
         eyebrow={`${pkg.days} days · ${pkg.badge}`}
         title={pkg.title}
-        text={pkg.highlights.join(' · ')}
+        text={pkg.highlights.join(' · ') || undefined}
         crumbs={[{ label: 'Curated Journeys', to: '/journeys' }, { label: pkg.title }]}
         tall
       >
         <div className="flex flex-wrap items-center gap-4 text-sm text-white/80">
-          <span className="flex items-center gap-2"><Stars rating={pkg.rating} /> {pkg.rating.toFixed(1)} · {pkg.reviews} reviews</span>
-          <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-sun" /> {pkg.route.join(' → ')}</span>
+          <span className="flex items-center gap-2"><Stars rating={pkg.rating} /> {pkg.rating.toFixed(1)}{pkg.reviews > 0 && ` · ${pkg.reviews} reviews`}</span>
+          {pkg.route.length > 0 && <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-sun" /> {pkg.route.join(' → ')}</span>}
         </div>
       </PageHero>
 
@@ -55,8 +58,13 @@ export default function JourneyDetail() {
           <div>
             <Reveal>
               <h2 className="font-display text-4xl font-semibold">Day by day</h2>
-              <p className="mt-2 text-navy-800/60">A suggested rhythm — every day can be changed to suit you.</p>
+              <p className="mt-2 text-navy-800/60">A suggested rhythm. Every day can be changed to suit you.</p>
             </Reveal>
+            {pkg.itinerary.length === 0 && (
+              <p className="mt-8 rounded-3xl bg-white p-6 text-navy-800/70 ring-1 ring-navy-900/5">
+                Your journey designer will shape the day-by-day plan around your dates and interests.
+              </p>
+            )}
             <ol className="relative mt-10 space-y-8 border-l-2 border-dashed border-teal/30 pl-8">
               {pkg.itinerary.map((stop, i) => (
                 <motion.li
@@ -106,7 +114,7 @@ export default function JourneyDetail() {
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <Reveal className="rounded-[2rem] bg-navy-900 p-6 text-white shadow-luxe sm:p-8">
               <p className="text-xs uppercase tracking-widest text-white/50">Starting from</p>
-              <p className="font-display text-5xl font-semibold">{formatPrice(pkg.priceFrom)}</p>
+              <p className="font-display text-5xl font-semibold">{pkg.priceFrom > 0 ? formatPrice(pkg.priceFrom) : 'On request'}</p>
               <p className="text-xs text-white/50">per person, twin share · fully customisable</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs"><CalendarDays className="h-3.5 w-3.5 text-sun" /> {pkg.days} days</span>
@@ -118,6 +126,13 @@ export default function JourneyDetail() {
                 ))}
               </ul>
               <div className="mt-6 space-y-2">
+                <button
+                  type="button"
+                  onClick={() => setEnquire(true)}
+                  className="flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold to-sunset px-5 py-3.5 text-sm font-semibold text-navy-900 shadow-glow transition hover:brightness-110"
+                >
+                  <Send className="h-4 w-4" /> Send an enquiry
+                </button>
                 <a href={whatsappLink(message)} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 rounded-full bg-emerald px-5 py-3.5 text-sm font-semibold transition hover:brightness-110">
                   <WhatsAppIcon className="h-4 w-4" /> Enquire on WhatsApp
                 </a>
@@ -159,6 +174,15 @@ export default function JourneyDetail() {
       )}
 
       <CtaBand message={message} />
+      <EnquiryModal
+        open={enquire}
+        onClose={() => setEnquire(false)}
+        title={pkg.title}
+        subtitle={`${pkg.days} days${pkg.priceFrom > 0 ? ` · from ${formatPrice(pkg.priceFrom)} per person` : ''}`}
+        source={`Journey: ${pkg.title}`}
+        whatsappMessage={message}
+        trip={{ journey: pkg.title, duration: `${pkg.days} days`, priceFrom: pkg.priceFrom > 0 ? formatPrice(pkg.priceFrom) : 'On request' }}
+      />
     </>
   );
 }

@@ -8,6 +8,7 @@ import { ICONS } from '../ui/icons.js';
 import { WhatsAppIcon } from '../ui/BrandIcons.jsx';
 import SectionHeading from '../ui/SectionHeading.jsx';
 import Reveal from '../ui/Reveal.jsx';
+import EnquiryForm from '../enquiry/EnquiryForm.jsx';
 
 const STEPS = ['Interests', 'Duration', 'Stay', 'Your Estimate'];
 
@@ -93,6 +94,8 @@ export default function TripBuilder() {
     tier: BUILDER.tiers.find((t) => t.id === trip.tier)?.label,
   };
 
+  const travellersLabel = `${trip.adults} adult${trip.adults > 1 ? 's' : ''}${trip.children ? `, ${trip.children} child${trip.children > 1 ? 'ren' : ''}` : ''}`;
+
   const message = estimate
     ? [
         `Hello Sasoba Travels! ${trip.name ? `I'm ${trip.name} and ` : ''}I'd like a bespoke Sri Lanka itinerary:`,
@@ -112,7 +115,7 @@ export default function TripBuilder() {
           eyebrow="Build Your Own Itinerary"
           title="Design your journey"
           accent="in three steps"
-          text="Tell us what moves you. We’ll return a hand-crafted itinerary within 24 hours — no obligation, no templates."
+          text="Tell us what moves you. We’ll return a hand-crafted itinerary within 24 hours. No obligation, no templates."
         />
 
         <Reveal className="mt-14 overflow-hidden rounded-[2rem] bg-porcelain shadow-luxe ring-1 ring-navy-900/5">
@@ -200,7 +203,7 @@ export default function TripBuilder() {
                   {step === 2 && (
                     <>
                       <h3 className="font-display text-3xl font-semibold">Where would you like to rest?</h3>
-                      <p className="mt-1 text-sm text-navy-800/60">Mix and match freely later — this sets the tone.</p>
+                      <p className="mt-1 text-sm text-navy-800/60">Mix and match freely later. This sets the tone.</p>
                       <div className="mt-6 grid gap-4 sm:grid-cols-3">
                         {BUILDER.tiers.map((t) => (
                           <OptionCard
@@ -224,7 +227,7 @@ export default function TripBuilder() {
                           ['Interests', labels.interests],
                           ['Duration', labels.duration],
                           ['Accommodation', labels.tier],
-                          ['Travellers', `${trip.adults} adult${trip.adults > 1 ? 's' : ''}${trip.children ? `, ${trip.children} child${trip.children > 1 ? 'ren' : ''}` : ''}`],
+                          ['Travellers', travellersLabel],
                         ].map(([k, v]) => (
                           <div key={k} className="rounded-2xl bg-white p-4 ring-1 ring-navy-900/5">
                             <dt className="text-[11px] font-semibold uppercase tracking-[0.2em] text-teal">{k}</dt>
@@ -232,30 +235,18 @@ export default function TripBuilder() {
                           </div>
                         ))}
                       </dl>
-                      <label className="mt-6 block">
-                        <span className="text-sm font-medium">Your name (optional)</span>
-                        <input
-                          value={trip.name}
-                          onChange={(e) => update({ name: e.target.value })}
-                          placeholder="e.g. Charlotte Whitmore"
-                          className="mt-2 w-full rounded-2xl border border-navy-900/10 bg-white px-4 py-3 text-sm focus:border-teal focus:ring-2 focus:ring-teal/20 focus:outline-none"
+                      <div className="mt-6">
+                        <EnquiryForm
+                          source="Trip builder"
+                          whatsappMessage={message}
+                          trip={{
+                            interests: labels.interests,
+                            duration: labels.duration,
+                            accommodation: labels.tier,
+                            travellers: travellersLabel,
+                            estimate: `${formatPrice(estimate.low)} – ${formatPrice(estimate.high)}`,
+                          }}
                         />
-                      </label>
-                      <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                        <a
-                          href={whatsappLink(message)}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="flex items-center justify-center gap-2 rounded-full bg-emerald px-6 py-4 text-sm font-semibold text-white shadow-lg transition hover:brightness-110"
-                        >
-                          <WhatsAppIcon className="h-5 w-5" /> Send via WhatsApp
-                        </a>
-                        <a
-                          href={`mailto:${CONTACT.email}?subject=${encodeURIComponent('Bespoke itinerary request')}&body=${encodeURIComponent(message)}`}
-                          className="flex items-center justify-center gap-2 rounded-full bg-navy-900 px-6 py-4 text-sm font-semibold text-white transition hover:bg-navy-800"
-                        >
-                          <Mail className="h-5 w-5" /> Send via Email
-                        </a>
                       </div>
                     </>
                   )}

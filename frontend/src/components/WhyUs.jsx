@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { WHY_US } from '../data/siteData.js';
-import { ICONS } from './ui/icons.js';
+import { getIcon } from './ui/icons.js';
 import SectionHeading from './ui/SectionHeading.jsx';
 import { fadeUp, stagger } from './ui/Reveal.jsx';
 import TiltCard from './ui/TiltCard.jsx';
@@ -17,7 +17,7 @@ export default function WhyUs() {
           eyebrow="Why Sasoba Travels"
           title="Royal hospitality,"
           accent="feather by feather"
-          text="Like the peacock that crowns our name, every Sasoba journey is layered with colour, care and quiet grandeur — designed for travellers who expect the extraordinary."
+          text="Like the peacock that crowns our name, every Sasoba journey is layered with colour, care and quiet grandeur, designed for travellers who expect the extraordinary."
         />
 
         <motion.ul
@@ -28,7 +28,7 @@ export default function WhyUs() {
           className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
         >
           {WHY_US.map((item) => {
-            const Icon = ICONS[item.icon];
+            const Icon = getIcon(item.icon);
             return (
               <motion.li key={item.title} variants={fadeUp} className="[perspective:1000px]">
                 <TiltCard className="group h-full overflow-hidden rounded-3xl border border-navy-900/5 bg-white p-7 shadow-[0_10px_40px_-20px_rgb(10_25_47/0.25)] transition-shadow duration-500 hover:shadow-luxe">

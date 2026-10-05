@@ -8,7 +8,7 @@ import FeatherParticles from '../ui/FeatherParticles.jsx';
 /** Closing call-to-action shown at the bottom of inner pages. */
 export default function CtaBand({
   title = 'Ready to write your own story?',
-  text = 'Tell us what you dream of — a journey designer will reply within 24 hours with a hand-crafted proposal.',
+  text = 'Tell us what you dream of, and a journey designer will reply within 24 hours with a hand-crafted proposal.',
   message = "Hello Sasoba Travels! I'd like help planning a trip.",
 }) {
   return (

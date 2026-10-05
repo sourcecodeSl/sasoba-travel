@@ -44,7 +44,7 @@ export default function JourneysPage() {
         eyebrow="Curated Journeys"
         title="Signature journeys,"
         accent="shaped around you"
-        text="Each route is a starting point. Change the pace, swap the hotels, add a day by the sea — every journey is fully private and fully flexible."
+        text="Each route is a starting point. Change the pace, swap the hotels, add a day by the sea. Every journey is fully private and fully flexible."
         crumbs={[{ label: 'Curated Journeys' }]}
       />
 
@@ -74,11 +74,11 @@ export default function JourneysPage() {
               ))}
             </AnimatePresence>
           </motion.div>
-          {results.length === 0 && <p className="py-16 text-center text-white/60">No journeys match — but we can design one just for you.</p>}
+          {results.length === 0 && <p className="py-16 text-center text-white/60">No journeys match, but we can design one just for you.</p>}
         </div>
       </section>
 
-      <CtaBand title="Want something completely different?" text="Use our itinerary builder or message us — we design journeys from scratch every day." />
+      <CtaBand title="Want something completely different?" text="Use our itinerary builder or message us. We design journeys from scratch every day." />
     </>
   );
 }

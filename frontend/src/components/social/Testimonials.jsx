@@ -1,12 +1,12 @@
 import { useCallback, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Play, Quote, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Quote, X } from 'lucide-react';
 import { TESTIMONIALS } from '../../data/siteData.js';
 import { useAutoplay } from '../../hooks/useAutoplay.js';
 import { useLockBody } from '../../hooks/useLockBody.js';
 import SmartImage from '../ui/SmartImage.jsx';
 import SectionHeading from '../ui/SectionHeading.jsx';
-import Stars from '../ui/Stars.jsx';
+import TestimonialCard from '../cards/TestimonialCard.jsx';
 
 function StoryModal({ story, onClose }) {
   useLockBody(Boolean(story), onClose);
@@ -83,7 +83,7 @@ export default function Testimonials() {
           eyebrow="Traveller Stories"
           title="Told by those who"
           accent="flew with us"
-          text="From London to Melbourne — hear why travellers return to Sasoba again and again."
+          text="From London to Melbourne, hear why travellers return to Sasoba again and again."
         />
 
         <div
@@ -96,7 +96,7 @@ export default function Testimonials() {
             const visible = Math.abs(o) <= 1;
             return (
               <motion.article
-                key={t.name}
+                key={t.id ?? t.name}
                 aria-hidden={o !== 0}
                 animate={{
                   x: `${o * 72}%`,
@@ -110,36 +110,7 @@ export default function Testimonials() {
                 style={{ pointerEvents: visible ? 'auto' : 'none' }}
                 onClick={() => o !== 0 && setIndex(i)}
               >
-                <div className="group relative h-full overflow-hidden rounded-[2rem] shadow-luxe">
-                  <SmartImage src={t.image} alt="" className="absolute inset-0 h-full w-full transition-transform duration-1000 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/10" />
-                  <button
-                    type="button"
-                    tabIndex={o === 0 ? 0 : -1}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setStory(t);
-                    }}
-                    aria-label={`Play story from ${t.name}`}
-                    className="absolute top-1/3 left-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/15 text-white ring-1 ring-white/30 backdrop-blur-md transition hover:scale-110 hover:bg-sun hover:text-navy-900"
-                  >
-                    <span className="absolute inset-0 animate-ping rounded-full bg-white/20" />
-                    <Play className="relative ml-1 h-6 w-6 fill-current" />
-                  </button>
-                  <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                    <Stars rating={5} className="h-4 w-4" />
-                    <p className="mt-3 font-display text-xl leading-snug text-white sm:text-2xl">“{t.quote}”</p>
-                    <div className="mt-5 flex items-center justify-between gap-3 border-t border-white/15 pt-4">
-                      <div>
-                        <p className="text-sm font-semibold text-white">{t.name}</p>
-                        <p className="text-xs text-white/60">{t.trip}</p>
-                      </div>
-                      <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white">
-                        {t.flag} {t.country}
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                <TestimonialCard t={t} onPlay={setStory} focusable={o === 0} />
               </motion.article>
             );
           })}

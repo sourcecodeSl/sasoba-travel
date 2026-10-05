@@ -56,3 +56,6 @@ export const ICONS = {
   TreePine,
   Waves,
 };
+
+/** Looks up an icon by name, falling back to Sparkles so unknown names never crash a page. */
+export const getIcon = (name) => ICONS[name] || Sparkles;

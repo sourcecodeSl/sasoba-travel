@@ -36,7 +36,7 @@ export default function WhatsAppFloat() {
               <X className="h-4 w-4" />
             </button>
             <p className="font-semibold">Ayubowan! 🙏</p>
-            <p className="mt-1 text-navy-800/70">Our concierge is online — ask us anything about your Sri Lanka journey.</p>
+            <p className="mt-1 text-navy-800/70">Our concierge is online. Ask us anything about your Sri Lanka journey.</p>
           </motion.div>
         )}
       </AnimatePresence>

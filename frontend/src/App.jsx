@@ -10,12 +10,14 @@ const SafariPage = lazy(() => import('./pages/SafariPage.jsx'));
 const CulturalPage = lazy(() => import('./pages/CulturalPage.jsx'));
 const StaysPage = lazy(() => import('./pages/StaysPage.jsx'));
 const AboutPage = lazy(() => import('./pages/AboutPage.jsx'));
+const AdminApp = lazy(() => import('./admin/AdminApp.jsx'));
 import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
   return (
     <Suspense fallback={<div className="min-h-screen bg-navy-950" />}>
       <Routes>
+        <Route path="admin/*" element={<AdminApp />} />
         <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="destinations" element={<DestinationsPage />} />

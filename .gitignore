@@ -15,3 +15,8 @@ npm-debug.log*
 Thumbs.db
 .vscode/
 .idea/
+
+# Backend: local secrets and user uploads
+backend/config.local.php
+backend/uploads/*
+!backend/uploads/.htaccess

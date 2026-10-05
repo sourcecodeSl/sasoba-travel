@@ -15,7 +15,7 @@ export default function ItineraryModal({ pkg, onClose }) {
   useLockBody(Boolean(pkg), close);
 
   const message = pkg
-    ? `Hello Sasoba Travels! I'd love to know more about "${pkg.title}" (${pkg.days} days, from ${formatPrice(pkg.priceFrom)} pp).`
+    ? `Hello Sasoba Travels! I'd love to know more about "${pkg.title}" (${pkg.days} days${pkg.priceFrom > 0 ? `, from ${formatPrice(pkg.priceFrom)} pp` : ''}).`
     : '';
 
   return (
@@ -87,7 +87,7 @@ export default function ItineraryModal({ pkg, onClose }) {
                 <aside className="h-fit space-y-5 rounded-3xl bg-navy-900 p-6 text-white">
                   <div>
                     <p className="text-xs uppercase tracking-widest text-white/50">Starting from</p>
-                    <p className="font-display text-4xl font-semibold">{formatPrice(pkg.priceFrom)}</p>
+                    <p className="font-display text-4xl font-semibold">{pkg.priceFrom > 0 ? formatPrice(pkg.priceFrom) : 'On request'}</p>
                     <p className="text-xs text-white/50">per person, twin share · fully customisable</p>
                   </div>
                   <ul className="space-y-2 text-sm text-white/80">

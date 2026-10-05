@@ -1,0 +1,2053 @@
+{
+  "testimonials": [
+    {
+      "name": "Charlotte & James Whitmore",
+      "country": "United Kingdom",
+      "flag": "🇬🇧",
+      "trip": "Luxury Honeymoon · 12 days",
+      "quote": "Every single detail felt considered. A private dinner on the ramparts of Galle Fort was the most romantic evening of our lives.",
+      "image": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=900&q=80",
+      "rating": 5
+    },
+    {
+      "name": "Lukas Hoffmann",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "trip": "Wild Ceylon · 11 days",
+      "quote": "Our naturalist found us three leopards in one morning. The organisation was flawless: pünktlich, professional and warm.",
+      "image": "https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=900&q=80",
+      "rating": 5
+    },
+    {
+      "name": "Amélie Laurent",
+      "country": "France",
+      "flag": "🇫🇷",
+      "trip": "Cultural Escape · 9 days",
+      "quote": "Sigiriya at sunrise with nobody else around. Sasoba understood exactly the kind of journey I dreamed of.",
+      "image": "https://images.unsplash.com/photo-1612862862126-865765df2ded?auto=format&fit=crop&w=900&q=80",
+      "rating": 5
+    },
+    {
+      "name": "The Martinez Family",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "trip": "Family Adventure · 14 days",
+      "quote": "Our kids still talk about the whales and the tuk-tuk ride through Kandy. The 24/7 WhatsApp concierge was a lifesaver.",
+      "image": "https://images.unsplash.com/photo-1580910527739-556eb89f9d65?auto=format&fit=crop&w=900&q=80",
+      "rating": 5
+    },
+    {
+      "name": "Olivia Chen",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "trip": "Wellness & Ayurveda · 10 days",
+      "quote": "I came home rested in a way I hadn’t felt in years. The Ayurveda retreat and tea-country train were pure magic.",
+      "image": "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=900&q=80",
+      "rating": 5
+    }
+  ],
+  "moments": [
+    {
+      "image": "https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&w=700&q=80",
+      "handle": "@wanderwithmia",
+      "likes": 2841,
+      "link": "https://instagram.com/"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=700&q=80",
+      "handle": "@thewhitmores",
+      "likes": 1932,
+      "link": "https://instagram.com/"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=700&q=80",
+      "handle": "@lukas.wild",
+      "likes": 4210,
+      "link": "https://instagram.com/"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?auto=format&fit=crop&w=700&q=80",
+      "handle": "@olivia.slowtravel",
+      "likes": 1577,
+      "link": "https://instagram.com/"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1612862862126-865765df2ded?auto=format&fit=crop&w=700&q=80",
+      "handle": "@amelie.voyage",
+      "likes": 3368,
+      "link": "https://instagram.com/"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1580910527739-556eb89f9d65?auto=format&fit=crop&w=700&q=80",
+      "handle": "@bluewhalebound",
+      "likes": 2204,
+      "link": "https://instagram.com/"
+    }
+  ],
+  "destinations": [
+    {
+      "slug": "sigiriya",
+      "name": "Sigiriya",
+      "region": "Cultural Triangle",
+      "categories": [
+        "Culture",
+        "Adventure"
+      ],
+      "unesco": true,
+      "tagline": "The Lion Rock fortress in the sky",
+      "intro": "Rising 200 metres from the jungle, Sigiriya was the 5th-century palace of King Kashyapa. Climb past the famous cloud-maiden frescoes and the giant lion paws to the ruined summit palace, with the whole of the dry zone spread out below.",
+      "highlights": [
+        "Sunrise climb before the crowds",
+        "Cloud-maiden frescoes & the Mirror Wall",
+        "Lion Paw terrace",
+        "Royal water gardens"
+      ],
+      "experiences": [
+        {
+          "title": "Private dawn ascent",
+          "text": "Start at first light with a historian guide and have the summit almost to yourself."
+        },
+        {
+          "title": "Pidurangala sunset",
+          "text": "Climb the neighbouring rock for the classic view of Sigiriya glowing at dusk."
+        },
+        {
+          "title": "Village & lake safari",
+          "text": "Bullock cart, catamaran and a home-cooked rice-and-curry lunch in a farming village."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "2–3 nights",
+      "fromColombo": "≈ 4 h",
+      "image": "/images/places/sigiriya.jpg",
+      "credit": {
+        "author": "Wrobell",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sigiriya_(141688197).jpeg"
+      },
+      "species": []
+    },
+    {
+      "slug": "dambulla",
+      "name": "Dambulla Cave Temple",
+      "region": "Cultural Triangle",
+      "categories": [
+        "Culture"
+      ],
+      "unesco": true,
+      "tagline": "Golden Buddhas in painted caves",
+      "intro": "Five cave shrines carved into a granite outcrop, filled with more than 150 Buddha statues and walls of vivid murals. Pilgrims have worshipped here for over two thousand years.",
+      "highlights": [
+        "Five painted cave shrines",
+        "14-metre reclining Buddha",
+        "Views across to Sigiriya",
+        "Golden Temple museum"
+      ],
+      "experiences": [
+        {
+          "title": "Early-morning visit",
+          "text": "Arrive as the caves open, when the light is soft and the rock still cool."
+        },
+        {
+          "title": "Monk blessing",
+          "text": "Receive a traditional pirith thread blessing from a resident monk."
+        },
+        {
+          "title": "Spice garden stop",
+          "text": "Taste cinnamon, cardamom and pepper straight from the vine in nearby Matale."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "Half day (stay in Sigiriya)",
+      "fromColombo": "≈ 3.5 h",
+      "image": "/images/places/dambulla.jpg",
+      "credit": {
+        "author": "Lankapic",
+        "license": "CC BY 2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:Dambulla-buddhastupa.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "anuradhapura",
+      "name": "Anuradhapura",
+      "region": "Cultural Triangle",
+      "categories": [
+        "Culture"
+      ],
+      "unesco": true,
+      "tagline": "The first great capital of Lanka",
+      "intro": "For over a thousand years Anuradhapura ruled the island. Its colossal white dagobas, monastery ruins and the sacred Sri Maha Bodhi, grown from a cutting of the Buddha’s own Bodhi tree, make it the spiritual heart of Sri Lanka.",
+      "highlights": [
+        "Ruwanwelisaya stupa",
+        "Sri Maha Bodhi sacred fig",
+        "Jetavanaramaya",
+        "Isurumuniya rock temple"
+      ],
+      "experiences": [
+        {
+          "title": "Ruins by bicycle",
+          "text": "Cycle between monasteries and ancient reservoirs with an archaeologist."
+        },
+        {
+          "title": "Evening puja",
+          "text": "Join white-clad pilgrims offering lotus flowers at sunset."
+        },
+        {
+          "title": "Mihintale climb",
+          "text": "Climb to the hilltop where Buddhism first arrived on the island."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "1–2 nights",
+      "fromColombo": "≈ 4.5 h",
+      "image": "/images/places/anuradhapura.jpg",
+      "credit": {
+        "author": "Thisaru Tharuka",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ruwanweli_Maha_Saaya.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "polonnaruwa",
+      "name": "Polonnaruwa",
+      "region": "Cultural Triangle",
+      "categories": [
+        "Culture",
+        "Adventure"
+      ],
+      "unesco": true,
+      "tagline": "A medieval royal city among the trees",
+      "intro": "The island’s second capital is one of the best-preserved ancient cities in Asia. Royal palaces, lotus baths and the serene rock-carved Buddhas of Gal Vihara sit beside the vast Parakrama Samudra reservoir.",
+      "highlights": [
+        "Gal Vihara rock Buddhas",
+        "Royal Palace ruins",
+        "The Quadrangle (Vatadage)",
+        "Parakrama Samudra lake"
+      ],
+      "experiences": [
+        {
+          "title": "Cycle the ancient city",
+          "text": "The flat, shaded site is perfect to explore by bicycle."
+        },
+        {
+          "title": "Minneriya add-on",
+          "text": "Combine with an afternoon elephant safari just 30 minutes away."
+        },
+        {
+          "title": "Lakeside sunset",
+          "text": "Watch fishermen return across the 12th-century reservoir."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "Day trip from Sigiriya",
+      "fromColombo": "≈ 5 h",
+      "image": "/images/places/polonnaruwa.jpg",
+      "credit": {
+        "author": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Polonnaruwa_01.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "kandy",
+      "name": "Kandy",
+      "region": "Hill Country",
+      "categories": [
+        "Culture",
+        "Hills"
+      ],
+      "unesco": true,
+      "tagline": "The last royal capital",
+      "intro": "Set around a lake in the green hills, Kandy was the seat of the last Sinhalese kings. The Temple of the Sacred Tooth Relic is the most revered shrine in the country, and each July or August the city hosts the spectacular Esala Perahera.",
+      "highlights": [
+        "Temple of the Sacred Tooth Relic",
+        "Royal Botanic Gardens, Peradeniya",
+        "Kandy Lake promenade",
+        "Esala Perahera festival"
+      ],
+      "experiences": [
+        {
+          "title": "Evening puja at the Temple",
+          "text": "Drums, incense and the opening of the relic chamber doors."
+        },
+        {
+          "title": "Kandyan dance",
+          "text": "Fire-walking and whirling dancers in traditional dress."
+        },
+        {
+          "title": "Tea & spice trail",
+          "text": "Visit a working tea factory and spice garden in the hills."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        12
+      ],
+      "idealStay": "2 nights",
+      "fromColombo": "≈ 3 h",
+      "image": "/images/places/kandy.jpg",
+      "credit": {
+        "author": "A.Savin",
+        "license": "FAL",
+        "source": "https://commons.wikimedia.org/wiki/File:SL_Kandy_asv2020-01_img33_Sacred_Tooth_Temple.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "nuwara-eliya",
+      "name": "Nuwara Eliya",
+      "region": "Hill Country",
+      "categories": [
+        "Hills",
+        "Nature"
+      ],
+      "tagline": "“Little England” in the tea country",
+      "intro": "At 1,900 metres, Nuwara Eliya is cool, misty and wrapped in emerald tea estates. Colonial bungalows, a Tudor-style post office and a lakeside racecourse recall its days as a British hill station.",
+      "highlights": [
+        "Tea estates & factory tours",
+        "Gregory Lake",
+        "Colonial architecture",
+        "Gateway to Horton Plains"
+      ],
+      "experiences": [
+        {
+          "title": "Pluck with the pluckers",
+          "text": "Join an estate team at dawn, then taste your own leaf."
+        },
+        {
+          "title": "Planter’s bungalow stay",
+          "text": "Butlers, fireplaces and high tea in a restored estate home."
+        },
+        {
+          "title": "Scenic train",
+          "text": "Ride one of the world’s most beautiful railways onward to Ella."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        12
+      ],
+      "idealStay": "2 nights",
+      "fromColombo": "≈ 5 h",
+      "image": "/images/places/nuwara-eliya.jpg",
+      "credit": {
+        "author": "Abdul malik77",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:NuwaraEliya_from_top.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "ella",
+      "name": "Ella",
+      "region": "Hill Country",
+      "categories": [
+        "Hills",
+        "Adventure",
+        "Nature"
+      ],
+      "tagline": "Rail bridges, peaks and valley views",
+      "intro": "A laid-back village in a deep gap in the hills, Ella is the place for easy hikes and big views. Watch the blue train glide over the colonial Nine Arch Bridge, then hike Little Adam’s Peak for sunrise over the Ella Gap.",
+      "highlights": [
+        "Nine Arch Bridge",
+        "Little Adam’s Peak",
+        "Ella Rock hike",
+        "Ravana Falls"
+      ],
+      "experiences": [
+        {
+          "title": "Kandy–Ella train",
+          "text": "Reserved seats on the famous seven-hour ride through tea country."
+        },
+        {
+          "title": "Sunrise hike",
+          "text": "Little Adam’s Peak at first light with a local guide."
+        },
+        {
+          "title": "Ayurvedic cooking class",
+          "text": "Learn curry and sambol with a village family."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "2–3 nights",
+      "fromColombo": "≈ 6 h",
+      "image": "/images/places/ella.jpg",
+      "credit": {
+        "author": "MichaelJames2468",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Nine_Arches_Bridge.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "horton-plains",
+      "name": "Horton Plains",
+      "region": "Hill Country",
+      "categories": [
+        "Nature",
+        "Adventure"
+      ],
+      "unesco": true,
+      "tagline": "Cloud forest to World’s End",
+      "intro": "A high, windswept plateau of grassland and cloud forest, part of the Central Highlands World Heritage Site. A 9 km loop leads to World’s End, where the land drops almost 900 metres to the plains below.",
+      "highlights": [
+        "World’s End cliff",
+        "Baker’s Falls",
+        "Sambar deer & endemic birds",
+        "Cloud forest trails"
+      ],
+      "experiences": [
+        {
+          "title": "Dawn trek",
+          "text": "Reach World’s End before the mist rolls in, usually by 10am."
+        },
+        {
+          "title": "Birding walk",
+          "text": "Look for endemic whistling thrush and dull-blue flycatcher."
+        },
+        {
+          "title": "Picnic breakfast",
+          "text": "A hot hamper breakfast at the park gate after the hike."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "idealStay": "Half day (stay in Nuwara Eliya)",
+      "fromColombo": "≈ 6 h",
+      "image": "/images/places/horton-plains.jpg",
+      "credit": {
+        "author": "Faslan at en.wikipedia",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Srilankamountainforest.jpg"
+      },
+      "species": [
+        "Sambar deer",
+        "Whistling thrush",
+        "Bear monkey"
+      ]
+    },
+    {
+      "slug": "adams-peak",
+      "name": "Adam’s Peak (Sri Pada)",
+      "region": "Hill Country",
+      "categories": [
+        "Culture",
+        "Adventure"
+      ],
+      "tagline": "A night pilgrimage to a sacred summit",
+      "intro": "Revered by Buddhists, Hindus, Muslims and Christians alike, this 2,243 m peak bears a “sacred footprint” at its summit. Pilgrims climb 5,500 lamp-lit steps through the night to watch the sunrise and the peak’s triangular shadow.",
+      "highlights": [
+        "Overnight lamp-lit climb",
+        "Summit sunrise",
+        "Shadow of the peak",
+        "Tea-country views"
+      ],
+      "experiences": [
+        {
+          "title": "Guided night climb",
+          "text": "Start around 2am with a guide, tea stops and warm layers."
+        },
+        {
+          "title": "Recovery massage",
+          "text": "An Ayurvedic leg massage at your hill lodge afterwards."
+        },
+        {
+          "title": "Estate lodge",
+          "text": "Rest in a tea-estate bungalow at the foot of the mountain."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        12
+      ],
+      "idealStay": "1–2 nights",
+      "fromColombo": "≈ 4 h",
+      "image": "/images/places/adams-peak.jpg",
+      "credit": {
+        "author": "Bourgeois",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sri_Pada.JPG"
+      },
+      "species": []
+    },
+    {
+      "slug": "knuckles",
+      "name": "Knuckles Range",
+      "region": "Hill Country",
+      "categories": [
+        "Nature",
+        "Adventure"
+      ],
+      "unesco": true,
+      "tagline": "Wild trekking off the beaten path",
+      "intro": "Named for peaks that look like a clenched fist, the Knuckles range is a UNESCO-listed wilderness of cloud forest, waterfalls and remote villages: the island’s best multi-day trekking.",
+      "highlights": [
+        "Multi-day village treks",
+        "Waterfalls & river pools",
+        "Endemic lizards & birds",
+        "Mini World’s End"
+      ],
+      "experiences": [
+        {
+          "title": "Two-day trek",
+          "text": "Hike between villages with a porter team and a naturalist."
+        },
+        {
+          "title": "Eco-lodge nights",
+          "text": "Sleep in a remote lodge with river views."
+        },
+        {
+          "title": "Village kitchen",
+          "text": "Cook over a wood fire with a farming family."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "2–3 nights",
+      "fromColombo": "≈ 4.5 h",
+      "image": "/images/places/knuckles.jpg",
+      "credit": {
+        "author": "Astronomyinertia",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Knuckles_Range.JPG"
+      },
+      "species": []
+    },
+    {
+      "slug": "yala",
+      "name": "Yala National Park",
+      "region": "South Coast",
+      "categories": [
+        "Wildlife",
+        "Nature"
+      ],
+      "tagline": "Leopard country",
+      "intro": "Sri Lanka’s most famous park has one of the highest leopard densities in the world. Scrub jungle, lagoons and rocky outcrops also shelter elephants, sloth bears, crocodiles and more than 200 bird species.",
+      "highlights": [
+        "Leopards in Block 1",
+        "Sloth bears",
+        "Elephants & crocodiles",
+        "Coastal lagoons"
+      ],
+      "experiences": [
+        {
+          "title": "Private 4×4 safaris",
+          "text": "Morning and afternoon drives with a dedicated naturalist."
+        },
+        {
+          "title": "Luxury tented camp",
+          "text": "Fall asleep to jungle sounds on the edge of the park."
+        },
+        {
+          "title": "Bush breakfast",
+          "text": "A cooked breakfast set up in the wild between drives."
+        }
+      ],
+      "bestMonths": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "idealStay": "2 nights",
+      "fromColombo": "≈ 5 h",
+      "note": "Block 1 usually closes for part of September–October.",
+      "image": "/images/places/yala.jpg",
+      "credit": {
+        "author": "Ranmith Welikala",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Yala_Beach.jpg"
+      },
+      "species": [
+        "Leopard",
+        "Sloth bear",
+        "Elephant",
+        "Mugger crocodile"
+      ]
+    },
+    {
+      "slug": "udawalawe",
+      "name": "Udawalawe",
+      "region": "South Coast",
+      "categories": [
+        "Wildlife"
+      ],
+      "tagline": "Elephants, guaranteed",
+      "intro": "Open grassland around a large reservoir makes Udawalawe the best place in Sri Lanka to watch wild elephants. Herds of several hundred live here year-round. The nearby Elephant Transit Home cares for orphaned calves before returning them to the wild.",
+      "highlights": [
+        "Large wild elephant herds",
+        "Elephant Transit Home feeding",
+        "Water buffalo & crocodiles",
+        "Raptors & eagles"
+      ],
+      "experiences": [
+        {
+          "title": "Afternoon safari",
+          "text": "Golden light over the reservoir as herds come to drink."
+        },
+        {
+          "title": "Transit Home visit",
+          "text": "Watch orphaned calves at feeding time."
+        },
+        {
+          "title": "Stop en route",
+          "text": "Perfect halfway break between the hills and the south coast."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "idealStay": "1 night",
+      "fromColombo": "≈ 4 h",
+      "image": "/images/places/udawalawe.jpg",
+      "credit": {
+        "author": "Z thomas",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Udawalawe_Elephant_Transit_Home_2017-10-27_(37).jpg"
+      },
+      "species": [
+        "Asian elephant",
+        "Water buffalo",
+        "Crested serpent eagle"
+      ]
+    },
+    {
+      "slug": "wilpattu",
+      "name": "Wilpattu National Park",
+      "region": "North & West",
+      "categories": [
+        "Wildlife",
+        "Nature"
+      ],
+      "tagline": "The quiet wilderness",
+      "intro": "Sri Lanka’s largest national park is dotted with natural lakes called villus. Far fewer jeeps than Yala make Wilpattu a peaceful place to look for leopards, sloth bears and elephants.",
+      "highlights": [
+        "Leopards without the crowds",
+        "Natural “villu” lakes",
+        "Sloth bears",
+        "Pristine dry-zone forest"
+      ],
+      "experiences": [
+        {
+          "title": "Full-day safari",
+          "text": "Picnic lunch inside the park to reach the remote west."
+        },
+        {
+          "title": "Eco-lodge stay",
+          "text": "Solar-powered cabins on the park boundary."
+        },
+        {
+          "title": "Kalpitiya combo",
+          "text": "Pair with dolphins and kitesurfing on the coast."
+        }
+      ],
+      "bestMonths": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "idealStay": "2 nights",
+      "fromColombo": "≈ 4 h",
+      "image": "/images/places/wilpattu.jpg",
+      "credit": {
+        "author": "Rehman Abubakr",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:WilpattuNationalPark-April2014_(3).JPG"
+      },
+      "species": [
+        "Leopard",
+        "Sloth bear",
+        "Spotted deer",
+        "Painted stork"
+      ]
+    },
+    {
+      "slug": "minneriya",
+      "name": "Minneriya",
+      "region": "Cultural Triangle",
+      "categories": [
+        "Wildlife"
+      ],
+      "tagline": "The Great Elephant Gathering",
+      "intro": "In the dry season hundreds of elephants gather on the grassy shores of the ancient Minneriya reservoir, one of the largest meetings of Asian elephants on Earth.",
+      "highlights": [
+        "The Gathering (July–September)",
+        "Ancient reservoir",
+        "Kaudulla nearby",
+        "Easy from Sigiriya"
+      ],
+      "experiences": [
+        {
+          "title": "Sunset jeep safari",
+          "text": "The herds are most active in the late afternoon."
+        },
+        {
+          "title": "Kaudulla alternative",
+          "text": "Your naturalist chooses the park where herds are that day."
+        },
+        {
+          "title": "Hurulu eco-park",
+          "text": "A quieter option early in the year."
+        }
+      ],
+      "bestMonths": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "idealStay": "Half day (stay in Sigiriya)",
+      "fromColombo": "≈ 4.5 h",
+      "image": "/images/places/minneriya.jpg",
+      "credit": {
+        "author": "Walter Gehr",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Minneriya_National_Park,_elephants_gathering.jpg"
+      },
+      "species": [
+        "Asian elephant",
+        "Toque macaque",
+        "Pelicans"
+      ]
+    },
+    {
+      "slug": "sinharaja",
+      "name": "Sinharaja Rainforest",
+      "region": "South Coast",
+      "categories": [
+        "Nature",
+        "Wildlife"
+      ],
+      "unesco": true,
+      "tagline": "The island’s last great rainforest",
+      "intro": "A UNESCO-listed lowland rainforest where most of the trees and many of the birds are found nowhere else on Earth. Mixed-species bird flocks, purple-faced langurs and giant squirrels move through the canopy.",
+      "highlights": [
+        "Endemic bird flocks",
+        "Sri Lanka blue magpie",
+        "Waterfalls & streams",
+        "Purple-faced langurs"
+      ],
+      "experiences": [
+        {
+          "title": "Guided rainforest walk",
+          "text": "Walk with a village-born forest guide and a birder."
+        },
+        {
+          "title": "Canopy lodge",
+          "text": "Stay in an eco-lodge right on the forest edge."
+        },
+        {
+          "title": "Night walk",
+          "text": "Look for frogs, lizards and glowing fungi after dark."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "idealStay": "2 nights",
+      "fromColombo": "≈ 4 h",
+      "image": "/images/places/sinharaja.jpg",
+      "credit": {
+        "author": "Dan Lundberg",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:20160128_Sri_Lanka_4132_Sinharaja_Forest_Preserve_sRGB_(25674474901).jpg"
+      },
+      "species": [
+        "Blue magpie",
+        "Purple-faced langur",
+        "Green pit viper"
+      ]
+    },
+    {
+      "slug": "galle",
+      "name": "Galle Fort",
+      "region": "South Coast",
+      "categories": [
+        "Culture",
+        "Beach"
+      ],
+      "unesco": true,
+      "tagline": "A living colonial fortress by the sea",
+      "intro": "Built by the Portuguese and fortified by the Dutch, Galle Fort is a walled town of cobbled lanes, whitewashed churches, boutique hotels and galleries, and one of the best places on the coast to watch the sunset from the ramparts.",
+      "highlights": [
+        "Sunset on the ramparts",
+        "Lighthouse & Flag Rock",
+        "Boutique shops & cafés",
+        "Dutch Reformed Church"
+      ],
+      "experiences": [
+        {
+          "title": "Heritage walk",
+          "text": "Stories of spice traders and sea captains with a local historian."
+        },
+        {
+          "title": "Rampart dinner",
+          "text": "A private candle-lit table on the fort walls."
+        },
+        {
+          "title": "Stilt fishermen",
+          "text": "See the traditional fishermen at Koggala nearby."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        11,
+        12
+      ],
+      "idealStay": "2–3 nights",
+      "fromColombo": "≈ 2 h",
+      "image": "/images/places/galle.jpg",
+      "credit": {
+        "author": "Rovin Shanila",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Galle_Fort.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "mirissa",
+      "name": "Mirissa",
+      "region": "South Coast",
+      "categories": [
+        "Beach",
+        "Wildlife"
+      ],
+      "tagline": "Blue whales and palm-fringed bays",
+      "intro": "A crescent of golden sand famous for whale watching: blue whales and sperm whales pass close to the coast in season. After the boat, relax at Coconut Tree Hill or Secret Beach.",
+      "highlights": [
+        "Blue whale watching",
+        "Coconut Tree Hill",
+        "Secret Beach",
+        "Parrot Rock at sunset"
+      ],
+      "experiences": [
+        {
+          "title": "Responsible whale cruise",
+          "text": "A small vessel with a marine biologist on board."
+        },
+        {
+          "title": "Surf lesson",
+          "text": "Gentle beach breaks at nearby Weligama."
+        },
+        {
+          "title": "Clifftop villa",
+          "text": "Private pool villa overlooking the bay."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        11,
+        12
+      ],
+      "idealStay": "2–3 nights",
+      "fromColombo": "≈ 2.5 h",
+      "image": "/images/places/mirissa.jpg",
+      "credit": {
+        "author": "Ji-Elle",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mirissa-Plage_(3).jpg"
+      },
+      "species": [
+        "Blue whale",
+        "Sperm whale",
+        "Spinner dolphin"
+      ]
+    },
+    {
+      "slug": "tangalle",
+      "name": "Tangalle",
+      "region": "South Coast",
+      "categories": [
+        "Beach",
+        "Nature"
+      ],
+      "tagline": "Secluded coves and sea turtles",
+      "intro": "Long, empty beaches and rocky coves make Tangalle the south coast’s quiet hideaway. Nearby Rekawa is an important nesting beach for sea turtles, and Mulkirigala rock temple rises inland.",
+      "highlights": [
+        "Goyambokka & Silent Beach",
+        "Rekawa turtle watch",
+        "Mulkirigala rock temple",
+        "Lagoon kayaking"
+      ],
+      "experiences": [
+        {
+          "title": "Turtle night watch",
+          "text": "Watch nesting green turtles with a conservation project."
+        },
+        {
+          "title": "Beach-villa stay",
+          "text": "A secluded villa with your own chef."
+        },
+        {
+          "title": "Hiriketiya day",
+          "text": "Surf and cafés in the famous horseshoe bay."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        11,
+        12
+      ],
+      "idealStay": "3 nights",
+      "fromColombo": "≈ 3 h",
+      "image": "/images/places/tangalle.jpg",
+      "credit": {
+        "author": "Satdeep Gill",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Goyambokka_Beach,_Tangalle,_Sri_Lanka.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "bentota",
+      "name": "Bentota",
+      "region": "South Coast",
+      "categories": [
+        "Beach",
+        "Nature"
+      ],
+      "tagline": "River meets the ocean",
+      "intro": "Where the Bentota River meets the sea, this resort coast offers golden beaches, water sports and mangrove boat safaris, and it’s home to the gardens of Sri Lanka’s great architect, Geoffrey Bawa.",
+      "highlights": [
+        "Mangrove river safari",
+        "Lunuganga & Brief gardens",
+        "Water sports",
+        "Turtle hatchery"
+      ],
+      "experiences": [
+        {
+          "title": "River safari",
+          "text": "Look for monitor lizards and kingfishers in the mangroves."
+        },
+        {
+          "title": "Bawa garden tour",
+          "text": "Explore the architect’s country estate, Lunuganga."
+        },
+        {
+          "title": "Ayurveda retreat",
+          "text": "Traditional treatments at a beachfront spa."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        11,
+        12
+      ],
+      "idealStay": "2 nights",
+      "fromColombo": "≈ 1.5 h",
+      "image": "/images/places/bentota.jpg",
+      "credit": {
+        "author": "Vincent van Zeijst",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sri_Lanka,_Bentota,_beach_(2).JPG"
+      },
+      "species": []
+    },
+    {
+      "slug": "trincomalee",
+      "name": "Trincomalee",
+      "region": "East Coast",
+      "categories": [
+        "Beach",
+        "Wildlife",
+        "Culture"
+      ],
+      "tagline": "Deep harbour, white sand, blue whales",
+      "intro": "One of the world’s finest natural harbours, with the white-sand beaches of Nilaveli and Uppuveli to the north. Snorkel with reef sharks at Pigeon Island and visit the clifftop Koneswaram Hindu temple.",
+      "highlights": [
+        "Pigeon Island snorkelling",
+        "Nilaveli beach",
+        "Koneswaram Temple",
+        "Whales & dolphins"
+      ],
+      "experiences": [
+        {
+          "title": "Pigeon Island trip",
+          "text": "Snorkel with turtles and blacktip reef sharks."
+        },
+        {
+          "title": "Whale cruise",
+          "text": "Blue whales pass close to the east coast in season."
+        },
+        {
+          "title": "Temple at dusk",
+          "text": "Evening puja at Koneswaram on Swami Rock."
+        }
+      ],
+      "bestMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "3 nights",
+      "fromColombo": "≈ 6 h",
+      "image": "/images/places/trincomalee.jpg",
+      "credit": {
+        "author": "Kondephy",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Bay_of_Trincomalee.jpg"
+      },
+      "species": [
+        "Blue whale",
+        "Reef sharks",
+        "Sea turtles"
+      ]
+    },
+    {
+      "slug": "pasikudah",
+      "name": "Pasikudah",
+      "region": "East Coast",
+      "categories": [
+        "Beach"
+      ],
+      "tagline": "A shallow, glass-calm lagoon",
+      "intro": "A long, shallow bay protected by a reef, where you can wade far out into warm, calm water. Pasikudah is ideal for families and for a slow few days by the sea in summer.",
+      "highlights": [
+        "Calm shallow bay",
+        "Kalkudah beach",
+        "Snorkelling reefs",
+        "Batticaloa lagoon"
+      ],
+      "experiences": [
+        {
+          "title": "Lazy beach days",
+          "text": "Stay in a beachfront resort with a pool and spa."
+        },
+        {
+          "title": "Lagoon canoe",
+          "text": "Paddle past fishing villages at sunrise."
+        },
+        {
+          "title": "Batticaloa trip",
+          "text": "Visit the Dutch fort and the famous “singing fish” lagoon."
+        }
+      ],
+      "bestMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "2–3 nights",
+      "fromColombo": "≈ 6 h",
+      "image": "/images/places/pasikudah.jpg",
+      "credit": {
+        "author": "Anton Croos",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pasikudah_beach.JPG"
+      },
+      "species": []
+    },
+    {
+      "slug": "arugam-bay",
+      "name": "Arugam Bay",
+      "region": "East Coast",
+      "categories": [
+        "Beach",
+        "Adventure",
+        "Wildlife"
+      ],
+      "tagline": "The island’s surf capital",
+      "intro": "A world-famous right-hand point break and a relaxed surf-village atmosphere. Between sessions, spot elephants at Kumana and Lahugala or watch crocodiles in the lagoons.",
+      "highlights": [
+        "Main Point surf break",
+        "Elephant Rock",
+        "Kumana birdlife",
+        "Pottuvil lagoon safari"
+      ],
+      "experiences": [
+        {
+          "title": "Surf coaching",
+          "text": "Lessons for beginners, guided trips for experts."
+        },
+        {
+          "title": "Lagoon safari",
+          "text": "Canoe through mangroves at dawn."
+        },
+        {
+          "title": "Kumana jeep safari",
+          "text": "A wild, remote park with leopards and waterbirds."
+        }
+      ],
+      "bestMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "idealStay": "3 nights",
+      "fromColombo": "≈ 7.5 h",
+      "image": "/images/places/arugam-bay.jpg",
+      "credit": {
+        "author": "Dennis Sylvester Hurd",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Beach_of_Arugam_Bay.jpg"
+      },
+      "species": [
+        "Elephant",
+        "Crocodile",
+        "Waterbirds"
+      ]
+    },
+    {
+      "slug": "jaffna",
+      "name": "Jaffna",
+      "region": "North & West",
+      "categories": [
+        "Culture"
+      ],
+      "tagline": "Tamil culture in the far north",
+      "intro": "Jaffna has its own distinct Tamil culture: grand Hindu kovils, a star-shaped Dutch fort, palmyra-palm landscapes and the island’s spiciest crab curry. Causeways lead out to quiet islands like Nainativu.",
+      "highlights": [
+        "Nallur Kandaswamy Kovil",
+        "Jaffna Fort",
+        "Nainativu island temples",
+        "Jaffna crab curry"
+      ],
+      "experiences": [
+        {
+          "title": "Kovil at puja time",
+          "text": "Visit Nallur as the bells ring and lamps are lit."
+        },
+        {
+          "title": "Island hopping",
+          "text": "Ferry to Nainativu for its Hindu and Buddhist shrines."
+        },
+        {
+          "title": "Food trail",
+          "text": "Crab curry, odiyal kool and palmyra sweets."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "idealStay": "2 nights",
+      "fromColombo": "≈ 7 h",
+      "image": "/images/places/jaffna.jpg",
+      "credit": {
+        "author": "Gane Kumaraswamy",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Nallur_Kandasamy_front_entrance.jpg"
+      },
+      "species": []
+    },
+    {
+      "slug": "kalpitiya",
+      "name": "Kalpitiya",
+      "region": "North & West",
+      "categories": [
+        "Beach",
+        "Adventure",
+        "Wildlife"
+      ],
+      "tagline": "Dolphins and kitesurfing",
+      "intro": "A long, windswept peninsula between lagoon and sea. Huge pods of spinner dolphins appear offshore in winter, while strong summer winds make it one of Asia’s top kitesurfing spots.",
+      "highlights": [
+        "Spinner dolphin pods",
+        "Kitesurfing lagoon",
+        "Bar Reef",
+        "Near Wilpattu"
+      ],
+      "experiences": [
+        {
+          "title": "Dolphin cruise",
+          "text": "Sometimes hundreds of spinner dolphins at once."
+        },
+        {
+          "title": "Kite school",
+          "text": "Beginner courses on the flat-water lagoon."
+        },
+        {
+          "title": "Cabana stay",
+          "text": "Barefoot beach eco-cabanas."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "idealStay": "2–3 nights",
+      "fromColombo": "≈ 3 h",
+      "image": "/images/places/kalpitiya.jpg",
+      "credit": {
+        "author": "A.Savin",
+        "license": "FAL",
+        "source": "https://commons.wikimedia.org/wiki/File:SL_Kalpitiya_asv2020-01_img4_Fishery_harbour.jpg"
+      },
+      "species": [
+        "Spinner dolphin",
+        "Bottlenose dolphin",
+        "Sperm whale"
+      ]
+    },
+    {
+      "slug": "colombo",
+      "name": "Colombo",
+      "region": "North & West",
+      "categories": [
+        "Culture"
+      ],
+      "tagline": "The capital by the sea",
+      "intro": "Sri Lanka’s buzzing commercial capital mixes colonial buildings, markets, temples and a fast-growing skyline. Stroll Galle Face Green at sunset, shop for design, and eat very well.",
+      "highlights": [
+        "Galle Face Green",
+        "Gangaramaya Temple",
+        "Pettah markets",
+        "Design & dining scene"
+      ],
+      "experiences": [
+        {
+          "title": "Tuk-tuk city tour",
+          "text": "Markets, mosques, temples and colonial streets."
+        },
+        {
+          "title": "Street-food evening",
+          "text": "Kottu, hoppers and isso wade at Galle Face."
+        },
+        {
+          "title": "Bawa architecture",
+          "text": "Visit Number 11, Geoffrey Bawa’s home."
+        }
+      ],
+      "bestMonths": [
+        1,
+        2,
+        3,
+        4,
+        11,
+        12
+      ],
+      "idealStay": "1 night",
+      "fromColombo": "Start here",
+      "image": "/images/places/colombo.jpg",
+      "credit": {
+        "author": "Gihanud2001",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Colombo_city_skyline_at_night.png"
+      },
+      "species": []
+    }
+  ],
+  "journeys": [
+    {
+      "slug": "royal-heritage",
+      "title": "The Royal Heritage & Misty Hills",
+      "route": [
+        "Sigiriya",
+        "Kandy",
+        "Nuwara Eliya"
+      ],
+      "destinations": [
+        "sigiriya",
+        "dambulla",
+        "polonnaruwa",
+        "minneriya",
+        "kandy",
+        "nuwara-eliya"
+      ],
+      "days": 9,
+      "styles": [
+        "Cultural",
+        "Luxury Honeymoon",
+        "Wellness / Ayurveda"
+      ],
+      "places": [
+        "Sigiriya & Dambulla",
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella"
+      ],
+      "priceFrom": 3450,
+      "rating": 5,
+      "reviews": 412,
+      "badge": "Trending",
+      "image": "https://images.unsplash.com/photo-1612862862126-865765df2ded?auto=format&fit=crop&w=1400&q=80",
+      "highlights": [
+        "Private dawn climb of Sigiriya Lion Rock",
+        "Temple of the Tooth evening puja with a scholar",
+        "Scenic first-class train through tea country",
+        "Colonial tea-planter bungalow with butler"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Arrival & Negombo Lagoon",
+          "text": "VIP airport meet-and-greet, sunset lagoon cruise and seafood dinner."
+        },
+        {
+          "day": "2–3",
+          "title": "Sigiriya & Dambulla",
+          "text": "Dawn ascent of Lion Rock, cave temples of Dambulla, village bullock-cart and cookery session."
+        },
+        {
+          "day": "4",
+          "title": "Polonnaruwa by Bicycle",
+          "text": "Cycle the ancient royal capital with an archaeologist; elephant safari at Minneriya."
+        },
+        {
+          "day": "5–6",
+          "title": "Kandy",
+          "text": "Spice gardens, Royal Botanic Gardens at Peradeniya, private Temple of the Tooth puja."
+        },
+        {
+          "day": "7–8",
+          "title": "Nuwara Eliya",
+          "text": "Train to the highlands, tea plucking with estate families, high tea at the planter’s bungalow."
+        },
+        {
+          "day": "9",
+          "title": "Departure",
+          "text": "Leisurely transfer to Colombo with lunch at a heritage hotel."
+        }
+      ]
+    },
+    {
+      "slug": "wild-ceylon",
+      "title": "Wild Ceylon: Leopards, Whales & Rainforests",
+      "route": [
+        "Yala",
+        "Mirissa",
+        "Sinharaja"
+      ],
+      "destinations": [
+        "bentota",
+        "sinharaja",
+        "yala",
+        "mirissa",
+        "galle"
+      ],
+      "days": 11,
+      "styles": [
+        "Wildlife Safari",
+        "Coastal Escape"
+      ],
+      "places": [
+        "Yala National Park",
+        "Mirissa",
+        "Sinharaja Rainforest"
+      ],
+      "priceFrom": 4890,
+      "rating": 5,
+      "reviews": 287,
+      "badge": "Exclusive",
+      "image": "https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=1400&q=80",
+      "highlights": [
+        "Private 4x4 leopard safaris with a field naturalist",
+        "Blue whale expedition on a marine-biologist-led vessel",
+        "UNESCO Sinharaja rainforest trek for endemic birds",
+        "Luxury tented camp on the edge of Yala"
+      ],
+      "itinerary": [
+        {
+          "day": "1–2",
+          "title": "Colombo & Bentota",
+          "text": "Arrive, unwind at a Geoffrey Bawa riverside villa, mangrove boat safari."
+        },
+        {
+          "day": "3–5",
+          "title": "Sinharaja Rainforest",
+          "text": "Guided treks for blue magpies and endemic frogs; eco-lodge nights under the canopy."
+        },
+        {
+          "day": "6–8",
+          "title": "Yala National Park",
+          "text": "Twice-daily private game drives in Block 1 and 5; bush breakfast; star-lit tented camp."
+        },
+        {
+          "day": "9–10",
+          "title": "Mirissa",
+          "text": "Early-morning blue whale expedition, sea-turtle hatchery, clifftop villa sunsets."
+        },
+        {
+          "day": "11",
+          "title": "Departure",
+          "text": "Expressway transfer to the airport with Galle Fort lunch en route."
+        }
+      ]
+    },
+    {
+      "slug": "southern-bliss",
+      "title": "Southern Bliss: Secret Beaches & Dutch Forts",
+      "route": [
+        "Galle",
+        "Tangalle",
+        "Hiriketiya"
+      ],
+      "destinations": [
+        "galle",
+        "tangalle",
+        "mirissa"
+      ],
+      "days": 8,
+      "styles": [
+        "Coastal Escape",
+        "Luxury Honeymoon",
+        "Wellness / Ayurveda"
+      ],
+      "places": [
+        "Galle",
+        "Tangalle",
+        "Hiriketiya",
+        "Mirissa",
+        "Maldives Extension"
+      ],
+      "priceFrom": 2980,
+      "rating": 5,
+      "reviews": 356,
+      "badge": "Eco-Certified",
+      "image": "https://images.unsplash.com/photo-1552055568-f8c4fb8c6320?auto=format&fit=crop&w=1400&q=80",
+      "highlights": [
+        "Galle Fort walking tour with a local historian",
+        "Private beach villa with infinity pool in Tangalle",
+        "Surf lessons in the horseshoe bay of Hiriketiya",
+        "Ayurvedic spa ritual and sunset catamaran"
+      ],
+      "itinerary": [
+        {
+          "day": "1–3",
+          "title": "Galle Fort",
+          "text": "Boutique fort mansion, ramparts at dusk, stilt fishermen and cinnamon island."
+        },
+        {
+          "day": "4–6",
+          "title": "Tangalle",
+          "text": "Secluded beach villa, lagoon kayaking, Mulkirigala rock temple and private chef dinners."
+        },
+        {
+          "day": "7",
+          "title": "Hiriketiya",
+          "text": "Surf, swim and café-hop in the south’s most beautiful little bay."
+        },
+        {
+          "day": "8",
+          "title": "Departure",
+          "text": "Transfer to Colombo or extend to the Maldives."
+        }
+      ]
+    },
+    {
+      "slug": "hills-to-hideaways",
+      "title": "Ceylon Honeymoon: Hills to Hideaways",
+      "route": [
+        "Kandy",
+        "Ella",
+        "Galle"
+      ],
+      "destinations": [
+        "kandy",
+        "nuwara-eliya",
+        "ella",
+        "udawalawe",
+        "galle"
+      ],
+      "days": 12,
+      "styles": [
+        "Luxury Honeymoon",
+        "Coastal Escape",
+        "Wellness / Ayurveda"
+      ],
+      "places": [
+        "Kandy",
+        "Nuwara Eliya",
+        "Ella",
+        "Galle"
+      ],
+      "priceFrom": 4250,
+      "rating": 5,
+      "reviews": 198,
+      "badge": "Exclusive",
+      "image": "/images/places/ella.jpg",
+      "highlights": [
+        "Private carriage on the Kandy–Ella hill-country train",
+        "Candle-lit dinner in a tea-estate bungalow",
+        "Couples’ Ayurveda ritual",
+        "Sunset on Galle Fort ramparts"
+      ],
+      "itinerary": [
+        {
+          "day": "1–2",
+          "title": "Kandy",
+          "text": "Lakeside boutique hotel, Temple of the Tooth evening puja and Peradeniya gardens."
+        },
+        {
+          "day": "3–4",
+          "title": "Tea Country",
+          "text": "Scenic train to Nuwara Eliya, planter’s bungalow with butler, high tea on the lawn."
+        },
+        {
+          "day": "5–6",
+          "title": "Ella",
+          "text": "Nine Arch Bridge, Little Adam’s Peak at sunrise and a couples’ cooking class."
+        },
+        {
+          "day": "7",
+          "title": "Udawalawe",
+          "text": "Afternoon elephant safari on the way down to the coast."
+        },
+        {
+          "day": "8–11",
+          "title": "Galle & the South",
+          "text": "Fort mansion suite, private rampart dinner and a sunset catamaran."
+        },
+        {
+          "day": "12",
+          "title": "Departure",
+          "text": "Expressway transfer to the airport."
+        }
+      ]
+    },
+    {
+      "slug": "east-and-ancient-north",
+      "title": "East Coast & the Ancient North",
+      "route": [
+        "Anuradhapura",
+        "Jaffna",
+        "Trincomalee"
+      ],
+      "destinations": [
+        "anuradhapura",
+        "jaffna",
+        "trincomalee",
+        "pasikudah"
+      ],
+      "days": 10,
+      "styles": [
+        "Cultural",
+        "Coastal Escape"
+      ],
+      "places": [
+        "Anuradhapura",
+        "Jaffna",
+        "Trincomalee",
+        "Pasikudah"
+      ],
+      "priceFrom": 3180,
+      "rating": 4.9,
+      "reviews": 121,
+      "badge": "Trending",
+      "image": "/images/places/trincomalee.jpg",
+      "highlights": [
+        "Sacred city of Anuradhapura by bicycle",
+        "Jaffna’s Tamil temples and food trail",
+        "Snorkelling at Pigeon Island",
+        "Calm waters of Pasikudah bay"
+      ],
+      "itinerary": [
+        {
+          "day": "1–2",
+          "title": "Anuradhapura",
+          "text": "Dagobas, the Sri Maha Bodhi and a sunset climb at Mihintale."
+        },
+        {
+          "day": "3–4",
+          "title": "Jaffna",
+          "text": "Nallur Kovil at puja time, Jaffna Fort and a ferry to Nainativu island."
+        },
+        {
+          "day": "5–7",
+          "title": "Trincomalee",
+          "text": "Nilaveli beach, Pigeon Island snorkelling and Koneswaram temple."
+        },
+        {
+          "day": "8–9",
+          "title": "Pasikudah",
+          "text": "Slow beach days on the calm, shallow bay."
+        },
+        {
+          "day": "10",
+          "title": "Departure",
+          "text": "Transfer to Colombo or fly by seaplane."
+        }
+      ]
+    },
+    {
+      "slug": "family-wild-and-waves",
+      "title": "Family Adventure: Wild & Waves",
+      "route": [
+        "Sigiriya",
+        "Udawalawe",
+        "Bentota"
+      ],
+      "destinations": [
+        "sigiriya",
+        "minneriya",
+        "kandy",
+        "udawalawe",
+        "bentota"
+      ],
+      "days": 11,
+      "styles": [
+        "Wildlife Safari",
+        "Coastal Escape"
+      ],
+      "places": [
+        "Sigiriya & Dambulla",
+        "Kandy",
+        "Udawalawe",
+        "Bentota"
+      ],
+      "priceFrom": 2890,
+      "rating": 5,
+      "reviews": 164,
+      "badge": "Eco-Certified",
+      "image": "/images/places/udawalawe.jpg",
+      "highlights": [
+        "Kid-friendly climb of Sigiriya",
+        "Elephant safaris at Minneriya and Udawalawe",
+        "Village cooking and bullock-cart ride",
+        "River safari and turtle hatchery in Bentota"
+      ],
+      "itinerary": [
+        {
+          "day": "1–3",
+          "title": "Sigiriya",
+          "text": "Lion Rock, village safari and an elephant gathering at Minneriya."
+        },
+        {
+          "day": "4–5",
+          "title": "Kandy",
+          "text": "Kandyan dance show, spice garden and the Temple of the Tooth."
+        },
+        {
+          "day": "6–7",
+          "title": "Udawalawe",
+          "text": "Jeep safari and feeding time at the Elephant Transit Home."
+        },
+        {
+          "day": "8–10",
+          "title": "Bentota",
+          "text": "Beach resort, mangrove river safari and a turtle hatchery visit."
+        },
+        {
+          "day": "11",
+          "title": "Departure",
+          "text": "Short transfer to the airport."
+        }
+      ]
+    }
+  ],
+  "festivals": [
+    {
+      "month": "January",
+      "name": "Duruthu Perahera",
+      "place": "Kelaniya",
+      "text": "A torch-lit procession celebrating the Buddha’s first visit to Sri Lanka."
+    },
+    {
+      "month": "January",
+      "name": "Thai Pongal",
+      "place": "Jaffna & the east",
+      "text": "The Tamil harvest festival: sweet rice boiled over as an offering to the sun."
+    },
+    {
+      "month": "April",
+      "name": "Sinhala & Tamil New Year",
+      "place": "Island-wide",
+      "text": "Auspicious times, family feasts, oil lamps and village games."
+    },
+    {
+      "month": "May",
+      "name": "Vesak",
+      "place": "Island-wide",
+      "text": "Lanterns, illuminated pandals and free food stalls mark the Buddha’s birth, enlightenment and passing."
+    },
+    {
+      "month": "June",
+      "name": "Poson",
+      "place": "Anuradhapura & Mihintale",
+      "text": "Pilgrims in white celebrate the arrival of Buddhism on the island."
+    },
+    {
+      "month": "July–August",
+      "name": "Esala Perahera",
+      "place": "Kandy",
+      "text": "Ten nights of dancers, drummers, fire-twirlers and caparisoned elephants."
+    },
+    {
+      "month": "August",
+      "name": "Nallur Festival",
+      "place": "Jaffna",
+      "text": "A 25-day Hindu festival with chariot processions at Nallur Kovil."
+    },
+    {
+      "month": "October–November",
+      "name": "Deepavali",
+      "place": "Hill Country & north",
+      "text": "The Hindu festival of lights, with oil lamps and sweets."
+    }
+  ],
+  "culture_experiences": [
+    {
+      "icon": "ChefHat",
+      "title": "Village cooking class",
+      "text": "Grind spices on a stone and cook rice and curry over a wood fire."
+    },
+    {
+      "icon": "Flower2",
+      "title": "Authentic Ayurveda",
+      "text": "Consultations and treatments with qualified Ayurvedic doctors."
+    },
+    {
+      "icon": "Coffee",
+      "title": "Tea-maker for a day",
+      "text": "Pluck, wither, roll and taste with a tea master."
+    },
+    {
+      "icon": "Palette",
+      "title": "Mask & batik workshops",
+      "text": "Traditional crafts with artisans in Ambalangoda and Kandy."
+    },
+    {
+      "icon": "Music",
+      "title": "Kandyan drumming",
+      "text": "A private lesson with a family of temple drummers."
+    },
+    {
+      "icon": "BookOpen",
+      "title": "Scholar-led temple visits",
+      "text": "Understand what you’re seeing with a historian at your side."
+    }
+  ],
+  "stays": [
+    {
+      "title": "Colonial Planter’s Bungalow",
+      "location": "Tea Country, Hatton",
+      "tier": "boutique",
+      "priceFrom": 380,
+      "image": "/images/places/nuwara-eliya.jpg",
+      "features": [
+        "Personal butler",
+        "Log fires & high tea",
+        "Estate walks"
+      ],
+      "text": "Restored 19th-century bungalows on working tea estates, with only a handful of rooms."
+    },
+    {
+      "title": "Clifftop Ocean Villa",
+      "location": "Weligama & Mirissa",
+      "tier": "luxury",
+      "priceFrom": 620,
+      "image": "/images/places/mirissa.jpg",
+      "features": [
+        "Infinity pool",
+        "Private chef",
+        "Whale-season views"
+      ],
+      "text": "Architect-designed villas hanging over the Indian Ocean, fully staffed."
+    },
+    {
+      "title": "Luxury Tented Safari Camp",
+      "location": "Edge of Yala",
+      "tier": "eco",
+      "priceFrom": 540,
+      "image": "/images/places/yala.jpg",
+      "features": [
+        "Resident naturalist",
+        "Bush dinners",
+        "Solar-powered"
+      ],
+      "text": "Canvas suites with private decks, a short drive from the park gate."
+    },
+    {
+      "title": "Fort Mansion Suite",
+      "location": "Galle Fort",
+      "tier": "boutique",
+      "priceFrom": 450,
+      "image": "/images/places/galle.jpg",
+      "features": [
+        "Colonial interiors",
+        "Courtyard pool",
+        "Walk to the ramparts"
+      ],
+      "text": "Dutch-era merchants’ houses turned into intimate boutique hotels."
+    },
+    {
+      "title": "Rainforest Eco-Lodge",
+      "location": "Sinharaja",
+      "tier": "eco",
+      "priceFrom": 180,
+      "image": "/images/places/sinharaja.jpg",
+      "features": [
+        "Canopy views",
+        "Birding guides",
+        "Farm-to-table food"
+      ],
+      "text": "Low-impact lodges run with local communities on the forest edge."
+    },
+    {
+      "title": "Lakeside Heritage Resort",
+      "location": "Cultural Triangle",
+      "tier": "luxury",
+      "priceFrom": 390,
+      "image": "/images/places/sigiriya.jpg",
+      "features": [
+        "Views of Sigiriya",
+        "Spa & pool",
+        "Wildlife on site"
+      ],
+      "text": "Resorts built into the landscape around ancient reservoirs."
+    },
+    {
+      "title": "Garden Villa by the River",
+      "location": "Bentota",
+      "tier": "boutique",
+      "priceFrom": 310,
+      "image": "/images/places/bentota.jpg",
+      "features": [
+        "Tropical gardens",
+        "River & beach",
+        "Bawa-style design"
+      ],
+      "text": "Villas in the tropical-modern style Geoffrey Bawa made famous."
+    },
+    {
+      "title": "Beachfront Ayurveda Retreat",
+      "location": "South Coast",
+      "tier": "luxury",
+      "priceFrom": 480,
+      "image": "/images/places/tangalle.jpg",
+      "features": [
+        "Doctor consultations",
+        "Daily treatments",
+        "Yoga pavilion"
+      ],
+      "text": "Resident Ayurvedic doctors, personalised programmes and quiet beaches."
+    },
+    {
+      "title": "Hill-Country Hideaway",
+      "location": "Kandy",
+      "tier": "boutique",
+      "priceFrom": 260,
+      "image": "/images/places/kandy.jpg",
+      "features": [
+        "Valley views",
+        "Infinity pool",
+        "Close to the city"
+      ],
+      "text": "Small hotels in the forested hills just above Kandy."
+    }
+  ],
+  "contact": {
+    "whatsapp": "94770000000",
+    "email": "concierge@sasobatravels.com",
+    "phone": "+94 77 000 0000",
+    "address": "Colombo 03, Sri Lanka",
+    "instagram": "https://instagram.com/",
+    "facebook": "https://facebook.com/",
+    "youtube": "https://youtube.com/",
+    "hours": "Our concierge replies 24/7 on WhatsApp"
+  },
+  "about": {
+    "story": [
+      "In Sri Lanka the peacock (monara) is a symbol of grace, pride and beauty. Its feathers carry every colour of our island: the teal of the ocean, the green of the tea hills, the gold of temple roofs and the orange of a south-coast sunset.",
+      "Sasoba was founded on the same idea. Every journey should unfold like a peacock’s fan: layered, colourful and full of moments that make you stop and stare."
+    ],
+    "values": [
+      {
+        "icon": "Heart",
+        "title": "Genuine hospitality",
+        "text": "Sri Lankans say “Ayubowan”, meaning “may you live long”. We treat every traveller as a guest in our home."
+      },
+      {
+        "icon": "Compass",
+        "title": "Truly tailor-made",
+        "text": "No fixed departures, no group coaches. Every day is planned around you."
+      },
+      {
+        "icon": "Leaf",
+        "title": "Travel that gives back",
+        "text": "Community-run experiences, carbon offsetting and conservation partners."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Licensed & safe",
+        "text": "SLTDA-licensed guides, insured vehicles and 24/7 support."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Tell us your dream",
+        "text": "Share your dates, interests and travel style by form, WhatsApp or a video call."
+      },
+      {
+        "title": "Receive your proposal",
+        "text": "A journey designer sends a hand-crafted itinerary within 24 hours."
+      },
+      {
+        "title": "Refine together",
+        "text": "We adjust hotels, pace and experiences until it feels perfect."
+      },
+      {
+        "title": "Travel with confidence",
+        "text": "Your chauffeur-guide meets you at arrivals; our concierge is on call 24/7."
+      }
+    ],
+    "team": [
+      {
+        "icon": "PenTool",
+        "role": "Journey designers",
+        "text": "Sri Lanka specialists who design each itinerary by hand."
+      },
+      {
+        "icon": "Car",
+        "role": "Chauffeur-guides",
+        "text": "SLTDA-licensed, multilingual drivers who become your local friend."
+      },
+      {
+        "icon": "Binoculars",
+        "role": "Naturalists",
+        "text": "Field experts for safaris, birding and rainforest walks."
+      },
+      {
+        "icon": "Headset",
+        "role": "Concierge team",
+        "text": "On WhatsApp day and night while you travel."
+      }
+    ]
+  },
+  "etiquette": [
+    "Cover shoulders and knees at temples; remove shoes and hats before entering.",
+    "Never pose with your back to a Buddha statue, and don’t touch statues.",
+    "Walk clockwise around stupas and bodhi trees.",
+    "Give and receive with your right hand.",
+    "Ask before photographing people, monks or ceremonies.",
+    "Clothing or tattoos showing the Buddha can cause serious offence."
+  ]
+}

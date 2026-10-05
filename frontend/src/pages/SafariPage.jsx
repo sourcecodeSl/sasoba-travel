@@ -12,7 +12,7 @@ import SectionHeading from '../components/ui/SectionHeading.jsx';
 import SmartImage from '../components/ui/SmartImage.jsx';
 import CountUp from '../components/ui/CountUp.jsx';
 import { fadeUp, stagger } from '../components/ui/Reveal.jsx';
-import { ICONS } from '../components/ui/icons.js';
+import { getIcon } from '../components/ui/icons.js';
 
 const LAND = ['yala', 'wilpattu', 'udawalawe', 'minneriya', 'sinharaja', 'horton-plains'];
 const SEA = ['mirissa', 'trincomalee', 'kalpitiya'];
@@ -102,7 +102,7 @@ function WildlifeCalendar() {
                   return (
                     <span
                       key={m}
-                      title={`${m}${on ? ' — good' : ''}`}
+                      title={`${m}${on ? ' (good)' : ''}`}
                       className={`h-2.5 rounded-full transition-all duration-300 ${
                         on ? (current ? 'scale-y-150 bg-sun ring-2 ring-sun/40' : 'bg-feather') : current ? 'bg-navy-900/20' : 'bg-navy-900/[0.07]'
                       }`}
@@ -161,7 +161,7 @@ export default function SafariPage() {
 
       <section className="bg-cream py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Wildlife calendar" title="What’s best" accent="in which month?" text="Pick your travel month — green lights show what’s at its best." />
+          <SectionHeading eyebrow="Wildlife calendar" title="What’s best" accent="in which month?" text="Pick your travel month. Green lights show what’s at its best." />
           <div className="mt-12"><WildlifeCalendar /></div>
         </div>
       </section>
@@ -180,7 +180,7 @@ export default function SafariPage() {
           <SectionHeading eyebrow="The Sasoba way" title="Safari," accent="done beautifully" />
           <motion.div variants={stagger(0.08)} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {SAFARI_EXPERIENCES.map((e) => {
-              const Icon = ICONS[e.icon];
+              const Icon = getIcon(e.icon);
               return (
                 <motion.div key={e.title} variants={fadeUp} whileHover={{ y: -6 }} className="rounded-3xl bg-white p-7 ring-1 ring-navy-900/5 transition-shadow hover:shadow-luxe">
                   <span className="bg-feather grid h-12 w-12 place-items-center rounded-2xl text-white"><Icon className="h-6 w-6" /></span>

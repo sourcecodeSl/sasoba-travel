@@ -31,13 +31,13 @@ export default function DestinationCard({ d, size = 'md' }) {
           <span className="absolute top-4 right-4 grid h-10 w-10 translate-y-2 place-items-center rounded-full bg-white/90 text-navy-900 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
             <ArrowUpRight className="h-5 w-5" />
           </span>
-          <p className="absolute bottom-3 left-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/85">{d.region}</p>
+          <p className="absolute right-4 bottom-3 left-4 truncate text-[11px] font-semibold uppercase tracking-[0.2em] text-white/85">{d.region}</p>
         </div>
         <div className="flex flex-1 flex-col p-5">
-          <h3 className="font-display text-2xl leading-tight font-semibold text-navy-900 transition-colors group-hover:text-teal">{d.name}</h3>
-          <p className="mt-1 text-sm text-navy-800/65">{d.tagline}</p>
+          <h3 className="line-clamp-2 font-display text-2xl leading-tight font-semibold break-words text-navy-900 transition-colors group-hover:text-teal">{d.name}</h3>
+          {d.tagline && <p className="mt-1 line-clamp-2 text-sm text-navy-800/65">{d.tagline}</p>}
           <div className="mt-4 flex flex-wrap gap-1.5">
-            {d.categories.map((c) => (
+            {d.categories.slice(0, 4).map((c) => (
               <span key={c} className="rounded-full bg-teal/10 px-2.5 py-1 text-[11px] font-medium text-teal">{c}</span>
             ))}
           </div>

@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
-import { INSTAGRAM } from '../../data/siteData.js';
-import SmartImage from '../ui/SmartImage.jsx';
+import { CONTACT, INSTAGRAM } from '../../data/siteData.js';
+import MomentTile from '../cards/MomentTile.jsx';
 import { InstagramIcon } from '../ui/BrandIcons.jsx';
 import SectionHeading from '../ui/SectionHeading.jsx';
 import { fadeUp, stagger } from '../ui/Reveal.jsx';
@@ -17,10 +16,10 @@ export default function InstagramGrid() {
             eyebrow="#SasobaMoments"
             title="Moments from"
             accent="the road"
-            text="Tag @sasobatravels to be featured — a live window into our travellers' adventures."
+            text="Tag @sasobatravels to be featured. A live window into our travellers' adventures."
           />
           <a
-            href="https://instagram.com/"
+            href={CONTACT.instagram || 'https://instagram.com/'}
             target="_blank"
             rel="noreferrer"
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-gradient-to-r from-sunset via-[#d62976] to-[#962fbf] px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-110"
@@ -37,23 +36,8 @@ export default function InstagramGrid() {
           className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-6"
         >
           {INSTAGRAM.map((post, i) => (
-            <motion.li key={post.handle} variants={fadeUp} className={i % 2 === 1 ? 'lg:translate-y-8' : ''}>
-              <a
-                href="https://instagram.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="group relative block aspect-square overflow-hidden rounded-2xl"
-                aria-label={`Instagram post by ${post.handle}`}
-              >
-                <SmartImage src={post.image} alt="" className="h-full w-full transition-transform duration-700 group-hover:scale-110" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-navy-950/60 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <InstagramIcon className="h-6 w-6" />
-                  <span className="text-xs font-medium">{post.handle}</span>
-                  <span className="inline-flex items-center gap-1 text-xs text-white/80">
-                    <Heart className="h-3.5 w-3.5 fill-sunset text-sunset" /> {post.likes.toLocaleString()}
-                  </span>
-                </div>
-              </a>
+            <motion.li key={post.id ?? post.handle} variants={fadeUp} className={i % 2 === 1 ? 'lg:translate-y-8' : ''}>
+              <MomentTile post={post} href={post.link || CONTACT.instagram || 'https://instagram.com/'} />
             </motion.li>
           ))}
         </motion.ul>

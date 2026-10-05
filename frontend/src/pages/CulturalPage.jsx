@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CalendarDays, Check, MapPin } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { DESTINATIONS, PERAHERA_IMAGE } from '../data/destinations.js';
 import { PACKAGES } from '../data/siteData.js';
 import { CULTURE_EXPERIENCES, ETIQUETTE, FESTIVALS, PAGE_IMAGES } from '../data/pagesData.js';
@@ -10,8 +10,9 @@ import JourneyCard from '../components/cards/JourneyCard.jsx';
 import SectionHeading from '../components/ui/SectionHeading.jsx';
 import SmartImage from '../components/ui/SmartImage.jsx';
 import PhotoCredit from '../components/ui/PhotoCredit.jsx';
+import FestivalCard from '../components/cards/FestivalCard.jsx';
+import ExperienceCard from '../components/cards/ExperienceCard.jsx';
 import Reveal, { fadeUp, stagger } from '../components/ui/Reveal.jsx';
-import { ICONS } from '../components/ui/icons.js';
 
 export default function CulturalPage() {
   const sites = DESTINATIONS.filter((d) => d.categories.includes('Culture')).slice(0, 9);
@@ -32,7 +33,7 @@ export default function CulturalPage() {
 
       <section className="bg-porcelain py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Heritage" title="Sacred cities &" accent="royal capitals" text="The Cultural Triangle and beyond — each best explored with a historian at your side." />
+          <SectionHeading eyebrow="Heritage" title="Sacred cities &" accent="royal capitals" text="The Cultural Triangle and beyond, each best explored with a historian at your side." />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {sites.map((d) => <DestinationCard key={d.slug} d={d} />)}
           </div>
@@ -54,7 +55,7 @@ export default function CulturalPage() {
           <ol className="relative space-y-4 border-l border-white/15 pl-8">
             {FESTIVALS.map((f, i) => (
               <motion.li
-                key={f.name}
+                key={f.id ?? f.name}
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: '-40px' }}
@@ -62,14 +63,7 @@ export default function CulturalPage() {
                 className="relative"
               >
                 <span className="bg-feather absolute top-6 -left-[39px] h-3.5 w-3.5 rounded-full ring-4 ring-navy-950" />
-                <div className="glass rounded-3xl p-6 transition hover:bg-white/10">
-                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-sun">
-                    <span className="flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5" /> {f.month}</span>
-                    <span className="flex items-center gap-1.5 text-white/60"><MapPin className="h-3.5 w-3.5" /> {f.place}</span>
-                  </div>
-                  <h3 className="mt-2 font-display text-2xl font-semibold text-white">{f.name}</h3>
-                  <p className="mt-1 text-sm text-white/70">{f.text}</p>
-                </div>
+                <FestivalCard f={f} />
               </motion.li>
             ))}
           </ol>
@@ -80,16 +74,9 @@ export default function CulturalPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Hands-on" title="Live the culture," accent="don’t just see it" />
           <motion.div variants={stagger(0.08)} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {CULTURE_EXPERIENCES.map((e) => {
-              const Icon = ICONS[e.icon];
-              return (
-                <motion.div key={e.title} variants={fadeUp} whileHover={{ y: -6 }} className="group rounded-3xl bg-white p-7 ring-1 ring-navy-900/5 transition-shadow hover:shadow-luxe">
-                  <motion.span whileHover={{ rotate: 12 }} className="bg-feather grid h-12 w-12 place-items-center rounded-2xl text-white"><Icon className="h-6 w-6" /></motion.span>
-                  <h3 className="mt-5 font-display text-2xl font-semibold">{e.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-navy-800/65">{e.text}</p>
-                </motion.div>
-              );
-            })}
+            {CULTURE_EXPERIENCES.map((e) => (
+              <ExperienceCard key={e.id ?? e.title} e={e} />
+            ))}
           </motion.div>
 
           <Reveal className="mx-auto mt-16 max-w-3xl rounded-[2rem] bg-navy-900 p-8 text-white sm:p-10">

@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Award, Check, Clock, Info, MapPin, Moon } from 'lucide-react';
+import { ArrowLeft, Award, Check, Clock, Info, MapPin, Moon, Send } from 'lucide-react';
 import { DESTINATIONS, findDestination } from '../data/destinations.js';
 import { PACKAGES, whatsappLink } from '../data/siteData.js';
 import { PARK_SPECIES } from '../data/pagesData.js';
@@ -12,10 +13,12 @@ import MonthBar from '../components/cards/MonthBar.jsx';
 import SectionHeading from '../components/ui/SectionHeading.jsx';
 import Reveal, { fadeUp, stagger } from '../components/ui/Reveal.jsx';
 import { WhatsAppIcon } from '../components/ui/BrandIcons.jsx';
+import EnquiryModal from '../components/enquiry/EnquiryModal.jsx';
 import NotFound from './NotFound.jsx';
 
 export default function DestinationDetail() {
   const { slug } = useParams();
+  const [enquire, setEnquire] = useState(false);
   const d = findDestination(slug);
   if (!d) return <NotFound />;
 
@@ -56,9 +59,10 @@ export default function DestinationDetail() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.6fr_1fr] lg:px-8">
           <div>
             <Reveal>
-              <p className="font-display text-2xl leading-relaxed text-navy-900 sm:text-3xl">{d.intro}</p>
+              <p className="font-display text-2xl leading-relaxed text-navy-900 sm:text-3xl">{d.intro || d.tagline}</p>
             </Reveal>
 
+            {d.highlights.length > 0 && (
             <Reveal className="mt-12">
               <h2 className="font-display text-3xl font-semibold">Highlights</h2>
               <motion.ul variants={stagger(0.08)} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -72,6 +76,7 @@ export default function DestinationDetail() {
                 ))}
               </motion.ul>
             </Reveal>
+            )}
 
             {species && (
               <Reveal className="mt-12">
@@ -84,6 +89,7 @@ export default function DestinationDetail() {
               </Reveal>
             )}
 
+            {d.experiences.length > 0 && (
             <div className="mt-12">
               <Reveal>
                 <h2 className="font-display text-3xl font-semibold">Sasoba experiences</h2>
@@ -104,6 +110,7 @@ export default function DestinationDetail() {
                 ))}
               </motion.div>
             </div>
+            )}
           </div>
 
           {/* Sticky facts panel */}
@@ -131,11 +138,18 @@ export default function DestinationDetail() {
                   <Info className="h-4 w-4 shrink-0 text-gold" /> {d.note}
                 </p>
               )}
+              <button
+                type="button"
+                onClick={() => setEnquire(true)}
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold to-sunset px-5 py-3.5 text-sm font-semibold text-navy-900 shadow-glow transition hover:brightness-110"
+              >
+                <Send className="h-4 w-4" /> Plan a trip here
+              </button>
               <a
                 href={whatsappLink(`Hello Sasoba Travels! I'd love to include ${d.name} in my Sri Lanka trip.`)}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 flex items-center justify-center gap-2 rounded-full bg-emerald px-5 py-3.5 text-sm font-semibold text-white transition hover:brightness-110"
+                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-emerald px-5 py-3.5 text-sm font-semibold text-white transition hover:brightness-110"
               >
                 <WhatsAppIcon className="h-4 w-4" /> Add {d.name.split(' (')[0]} to my trip
               </a>
@@ -174,6 +188,15 @@ export default function DestinationDetail() {
       )}
 
       <CtaBand message={`Hello Sasoba Travels! I'm interested in visiting ${d.name}.`} />
+      <EnquiryModal
+        open={enquire}
+        onClose={() => setEnquire(false)}
+        title={`Visit ${d.name}`}
+        subtitle={d.tagline}
+        source={`Destination: ${d.name}`}
+        whatsappMessage={`Hello Sasoba Travels! I'd love to include ${d.name} in my Sri Lanka trip.`}
+        trip={{ destination: d.name, region: d.region }}
+      />
     </>
   );
 }

@@ -60,7 +60,7 @@ export const DESTINATIONS = [
     unesco: true,
     tagline: 'The first great capital of Lanka',
     intro:
-      'For over a thousand years Anuradhapura ruled the island. Its colossal white dagobas, monastery ruins and the sacred Sri Maha Bodhi — grown from a cutting of the Buddha’s own Bodhi tree — make it the spiritual heart of Sri Lanka.',
+      'For over a thousand years Anuradhapura ruled the island. Its colossal white dagobas, monastery ruins and the sacred Sri Maha Bodhi, grown from a cutting of the Buddha’s own Bodhi tree, make it the spiritual heart of Sri Lanka.',
     highlights: ['Ruwanwelisaya stupa', 'Sri Maha Bodhi sacred fig', 'Jetavanaramaya', 'Isurumuniya rock temple'],
     experiences: [
       { title: 'Ruins by bicycle', text: 'Cycle between monasteries and ancient reservoirs with an archaeologist.' },
@@ -166,7 +166,7 @@ export const DESTINATIONS = [
       'A high, windswept plateau of grassland and cloud forest, part of the Central Highlands World Heritage Site. A 9 km loop leads to World’s End, where the land drops almost 900 metres to the plains below.',
     highlights: ['World’s End cliff', 'Baker’s Falls', 'Sambar deer & endemic birds', 'Cloud forest trails'],
     experiences: [
-      { title: 'Dawn trek', text: 'Reach World’s End before the mist rolls in — usually by 10am.' },
+      { title: 'Dawn trek', text: 'Reach World’s End before the mist rolls in, usually by 10am.' },
       { title: 'Birding walk', text: 'Look for endemic whistling thrush and dull-blue flycatcher.' },
       { title: 'Picnic breakfast', text: 'A hot hamper breakfast at the park gate after the hike.' },
     ],
@@ -204,7 +204,7 @@ export const DESTINATIONS = [
     unesco: true,
     tagline: 'Wild trekking off the beaten path',
     intro:
-      'Named for peaks that look like a clenched fist, the Knuckles range is a UNESCO-listed wilderness of cloud forest, waterfalls and remote villages — the island’s best multi-day trekking.',
+      'Named for peaks that look like a clenched fist, the Knuckles range is a UNESCO-listed wilderness of cloud forest, waterfalls and remote villages: the island’s best multi-day trekking.',
     highlights: ['Multi-day village treks', 'Waterfalls & river pools', 'Endemic lizards & birds', 'Mini World’s End'],
     experiences: [
       { title: 'Two-day trek', text: 'Hike between villages with a porter team and a naturalist.' },
@@ -245,7 +245,7 @@ export const DESTINATIONS = [
     categories: ['Wildlife'],
     tagline: 'Elephants, guaranteed',
     intro:
-      'Open grassland around a large reservoir makes Udawalawe the best place in Sri Lanka to watch wild elephants — herds of several hundred live here year-round. The nearby Elephant Transit Home cares for orphaned calves before returning them to the wild.',
+      'Open grassland around a large reservoir makes Udawalawe the best place in Sri Lanka to watch wild elephants. Herds of several hundred live here year-round. The nearby Elephant Transit Home cares for orphaned calves before returning them to the wild.',
     highlights: ['Large wild elephant herds', 'Elephant Transit Home feeding', 'Water buffalo & crocodiles', 'Raptors & eagles'],
     experiences: [
       { title: 'Afternoon safari', text: 'Golden light over the reservoir as herds come to drink.' },
@@ -285,7 +285,7 @@ export const DESTINATIONS = [
     categories: ['Wildlife'],
     tagline: 'The Great Elephant Gathering',
     intro:
-      'In the dry season hundreds of elephants gather on the grassy shores of the ancient Minneriya reservoir — one of the largest meetings of Asian elephants on Earth.',
+      'In the dry season hundreds of elephants gather on the grassy shores of the ancient Minneriya reservoir, one of the largest meetings of Asian elephants on Earth.',
     highlights: ['The Gathering (July–September)', 'Ancient reservoir', 'Kaudulla nearby', 'Easy from Sigiriya'],
     experiences: [
       { title: 'Sunset jeep safari', text: 'The herds are most active in the late afternoon.' },
@@ -327,7 +327,7 @@ export const DESTINATIONS = [
     unesco: true,
     tagline: 'A living colonial fortress by the sea',
     intro:
-      'Built by the Portuguese and fortified by the Dutch, Galle Fort is a walled town of cobbled lanes, whitewashed churches, boutique hotels and galleries — and one of the best places on the coast to watch the sunset from the ramparts.',
+      'Built by the Portuguese and fortified by the Dutch, Galle Fort is a walled town of cobbled lanes, whitewashed churches, boutique hotels and galleries, and one of the best places on the coast to watch the sunset from the ramparts.',
     highlights: ['Sunset on the ramparts', 'Lighthouse & Flag Rock', 'Boutique shops & cafés', 'Dutch Reformed Church'],
     experiences: [
       { title: 'Heritage walk', text: 'Stories of spice traders and sea captains with a local historian.' },
@@ -387,7 +387,7 @@ export const DESTINATIONS = [
     categories: ['Beach', 'Nature'],
     tagline: 'River meets the ocean',
     intro:
-      'Where the Bentota River meets the sea, this resort coast offers golden beaches, water sports and mangrove boat safaris — and it’s home to the gardens of Sri Lanka’s great architect, Geoffrey Bawa.',
+      'Where the Bentota River meets the sea, this resort coast offers golden beaches, water sports and mangrove boat safaris, and it’s home to the gardens of Sri Lanka’s great architect, Geoffrey Bawa.',
     highlights: ['Mangrove river safari', 'Lunuganga & Brief gardens', 'Water sports', 'Turtle hatchery'],
     experiences: [
       { title: 'River safari', text: 'Look for monitor lizards and kingfishers in the mangroves.' },

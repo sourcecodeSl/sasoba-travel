@@ -85,8 +85,8 @@ export default function Packages({ search, onClearSearch }) {
               ))}
               <span className="text-xs text-white/60">
                 {anyMatch
-                  ? '— matching journeys are highlighted below.'
-                  : '— no exact match, but every journey can be tailored to you.'}
+                  ? 'Matching journeys are highlighted below.'
+                  : 'No exact match, but every journey can be tailored to you.'}
               </span>
               <button
                 type="button"

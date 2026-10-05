@@ -43,7 +43,7 @@ export default function DestinationsPage() {
         eyebrow="Destinations"
         title="An island of"
         accent="endless wonders"
-        text={`From misty tea hills to leopard jungles and sleepy surf towns — explore ${DESTINATIONS.length} of our favourite places in Sri Lanka.`}
+        text={`From misty tea hills to leopard jungles and sleepy surf towns, explore ${DESTINATIONS.length} of our favourite places in Sri Lanka.`}
         crumbs={[{ label: 'Destinations' }]}
       />
 
@@ -117,7 +117,7 @@ export default function DestinationsPage() {
 
           {results.length === 0 && (
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="py-20 text-center text-navy-800/60">
-              No destinations match — try another month or clear the filters.
+              No destinations match. Try another month or clear the filters.
             </motion.p>
           )}
         </div>

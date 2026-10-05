@@ -43,7 +43,7 @@ export const TRANSLATIONS = {
     'hero.title1': 'Experience the World',
     'hero.title2': 'in Full Feather',
     'hero.subtitle':
-      'Private, eco-luxury journeys crafted around you — guided by naturalists, chauffeured in comfort, and hosted with true Sri Lankan royal hospitality.',
+      'Private, eco-luxury journeys crafted around you, guided by naturalists, chauffeured in comfort, and hosted with true Sri Lankan royal hospitality.',
     'search.cta': 'Explore Journeys',
   },
   de: {
@@ -58,7 +58,7 @@ export const TRANSLATIONS = {
     'hero.title1': 'Erleben Sie die Welt',
     'hero.title2': 'in voller Pracht',
     'hero.subtitle':
-      'Private, nachhaltige Luxusreisen ganz nach Ihren Wünschen — mit Naturführern, eigenem Chauffeur und echter srilankischer Gastfreundschaft.',
+      'Private, nachhaltige Luxusreisen ganz nach Ihren Wünschen, mit Naturführern, eigenem Chauffeur und echter srilankischer Gastfreundschaft.',
     'search.cta': 'Reisen entdecken',
   },
   fr: {
@@ -73,7 +73,7 @@ export const TRANSLATIONS = {
     'hero.title1': 'Vivez le monde',
     'hero.title2': 'dans toute sa splendeur',
     'hero.subtitle':
-      'Des voyages privés et éco-luxe conçus pour vous — guides naturalistes, chauffeur privé et véritable hospitalité royale sri-lankaise.',
+      'Des voyages privés et éco-luxe conçus pour vous : guides naturalistes, chauffeur privé et véritable hospitalité royale sri-lankaise.',
     'search.cta': 'Explorer les voyages',
   },
 };
@@ -156,7 +156,7 @@ export const WHY_US = [
   {
     icon: 'Headset',
     title: '24/7 Concierge Support on the Road',
-    text: 'A real human on WhatsApp day and night — rebooking, restaurant tables, or a surprise birthday cake in the jungle.',
+    text: 'A real human on WhatsApp day and night for rebooking, restaurant tables, or a surprise birthday cake in the jungle.',
     stat: '24/7',
     statLabel: 'Live concierge',
   },
@@ -365,7 +365,7 @@ export const TESTIMONIALS = [
     flag: '🇩🇪',
     trip: 'Wild Ceylon · 11 days',
     quote:
-      'Our naturalist found us three leopards in one morning. The organisation was flawless — pünktlich, professional and warm.',
+      'Our naturalist found us three leopards in one morning. The organisation was flawless: pünktlich, professional and warm.',
     image: unsplash(IMG.leopard, 900),
   },
   {

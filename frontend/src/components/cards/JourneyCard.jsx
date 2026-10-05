@@ -29,16 +29,16 @@ export default function JourneyCard({ pkg }) {
         <div className="relative h-64 overflow-hidden">
           <SmartImage src={pkg.image} alt={pkg.title} className="h-full w-full transition-transform duration-[1.2s] ease-out group-hover:scale-110" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/20 to-transparent" />
-          <span className={`absolute top-4 left-4 rounded-full px-3 py-1 text-xs font-semibold ${BADGE[pkg.badge]}`}>{pkg.badge}</span>
+          <span className={`absolute top-4 left-4 rounded-full px-3 py-1 text-xs font-semibold ${BADGE[pkg.badge] || BADGE.Exclusive}`}>{pkg.badge}</span>
         </div>
         <div className="flex flex-1 flex-col p-6">
           <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-white/65">
             <span className="flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5 text-sun" /> {pkg.days} days</span>
-            <span className="flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5 text-sun" /> {pkg.route.join(' · ')}</span>
+            {pkg.route.length > 0 && <span className="flex min-w-0 items-center gap-1.5"><MapPin className="h-3.5 w-3.5 shrink-0 text-sun" /> <span className="truncate">{pkg.route.join(' · ')}</span></span>}
           </div>
-          <h3 className="mt-3 font-display text-2xl leading-tight font-semibold">{pkg.title}</h3>
+          <h3 className="mt-3 line-clamp-2 font-display text-2xl leading-tight font-semibold break-words">{pkg.title}</h3>
           <div className="mt-3 flex flex-wrap gap-1.5">
-            {pkg.styles.map((s) => (
+            {pkg.styles.slice(0, 3).map((s) => (
               <span key={s} className="rounded-full bg-white/10 px-2.5 py-1 text-[11px]">{s}</span>
             ))}
           </div>
@@ -46,7 +46,13 @@ export default function JourneyCard({ pkg }) {
             <div>
               <Stars rating={pkg.rating} className="h-3.5 w-3.5" />
               <p className="mt-1 text-xs text-white/50">
-                From <span className="font-display text-2xl font-semibold text-white">{formatPrice(pkg.priceFrom)}</span> pp
+                {pkg.priceFrom > 0 ? (
+                  <>
+                    From <span className="font-display text-2xl font-semibold text-white">{formatPrice(pkg.priceFrom)}</span> pp
+                  </>
+                ) : (
+                  <span className="text-sm font-semibold text-white/80">Price on request</span>
+                )}
               </p>
             </div>
             <span className="flex items-center gap-1.5 text-sm font-semibold text-sun">

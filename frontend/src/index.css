@@ -40,6 +40,19 @@
   border: 1px solid rgb(255 255 255 / 0.14);
 }
 
+/* Stops browser autofill painting light-blue boxes on dark inputs: the UA background is held
+   back by an endless transition, so the field stays transparent and the text stays white. */
+@utility autofill-dark {
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:autofill {
+    -webkit-text-fill-color: #fff;
+    caret-color: #fff;
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+}
+
 @utility glass-dark {
   background: rgb(10 25 47 / 0.72);
   backdrop-filter: blur(18px) saturate(160%);

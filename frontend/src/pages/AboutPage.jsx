@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 import { BadgeCheck } from 'lucide-react';
 import { CONTACT, WHY_US } from '../data/siteData.js';
 import { DESTINATIONS } from '../data/destinations.js';
-import { ABOUT_STEPS, ABOUT_TEAM, ABOUT_VALUES, PAGE_IMAGES } from '../data/pagesData.js';
+import { ABOUT_STEPS, ABOUT_STORY, ABOUT_TEAM, ABOUT_VALUES, PAGE_IMAGES } from '../data/pagesData.js';
 import PageHero from '../components/layout/PageHero.jsx';
 import CtaBand from '../components/layout/CtaBand.jsx';
 import SectionHeading from '../components/ui/SectionHeading.jsx';
 import PeacockLogo from '../components/ui/PeacockLogo.jsx';
 import CountUp from '../components/ui/CountUp.jsx';
 import Reveal, { fadeUp, stagger } from '../components/ui/Reveal.jsx';
-import { ICONS } from '../components/ui/icons.js';
+import { getIcon } from '../components/ui/icons.js';
 
 export default function AboutPage() {
   return (
@@ -30,14 +30,9 @@ export default function AboutPage() {
           <div>
             <SectionHeading align="left" eyebrow="Our story" title="Why the" accent="peacock?" />
             <Reveal className="mt-6 space-y-4 text-lg leading-relaxed text-navy-800/75">
-              <p>
-                In Sri Lanka the peacock — <em>monara</em> — is a symbol of grace, pride and beauty. Its feathers carry every colour of our island: the
-                teal of the ocean, the green of the tea hills, the gold of temple roofs and the orange of a south-coast sunset.
-              </p>
-              <p>
-                Sasoba was founded on the same idea. Every journey should unfold like a peacock’s fan — layered, colourful and full of moments that
-                make you stop and stare.
-              </p>
+              {ABOUT_STORY.map((p) => (
+                <p key={p.slice(0, 24)}>{p}</p>
+              ))}
             </Reveal>
           </div>
           <Reveal className="relative mx-auto grid aspect-square w-full max-w-md place-items-center">
@@ -70,7 +65,7 @@ export default function AboutPage() {
           <SectionHeading eyebrow="What we believe" title="Our" accent="values" />
           <motion.div variants={stagger(0.1)} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {ABOUT_VALUES.map((v) => {
-              const Icon = ICONS[v.icon];
+              const Icon = getIcon(v.icon);
               return (
                 <motion.div key={v.title} variants={fadeUp} whileHover={{ y: -6 }} className="rounded-3xl bg-white p-7 ring-1 ring-navy-900/5 transition-shadow hover:shadow-luxe">
                   <span className="bg-feather grid h-12 w-12 place-items-center rounded-2xl text-white"><Icon className="h-6 w-6" /></span>
@@ -120,7 +115,7 @@ export default function AboutPage() {
           <SectionHeading dark eyebrow="Our people" title="The team" accent="behind your journey" />
           <motion.div variants={stagger(0.1)} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {ABOUT_TEAM.map((t) => {
-              const Icon = ICONS[t.icon];
+              const Icon = getIcon(t.icon);
               return (
                 <motion.div key={t.role} variants={fadeUp} whileHover={{ y: -6 }} className="glass rounded-3xl p-7 text-white">
                   <Icon className="h-8 w-8 text-sun" />

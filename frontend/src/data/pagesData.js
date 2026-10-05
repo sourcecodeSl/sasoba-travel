@@ -22,17 +22,17 @@ export const WILDLIFE_CALENDAR = [
   { species: 'The Elephant Gathering', where: 'Minneriya · Kaudulla', months: [7, 8, 9] },
   { species: 'Wild elephants', where: 'Udawalawe', months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
   { species: 'Sloth bears', where: 'Yala · Wilpattu', months: [5, 6, 7] },
-  { species: 'Blue whales — south', where: 'Mirissa', months: [12, 1, 2, 3, 4] },
-  { species: 'Blue whales — east', where: 'Trincomalee', months: [5, 6, 7, 8] },
+  { species: 'Blue whales (south)', where: 'Mirissa', months: [12, 1, 2, 3, 4] },
+  { species: 'Blue whales (east)', where: 'Trincomalee', months: [5, 6, 7, 8] },
   { species: 'Spinner dolphins', where: 'Kalpitiya', months: [11, 12, 1, 2, 3] },
   { species: 'Migratory birds', where: 'Bundala · Kumana', months: [11, 12, 1, 2, 3, 4] },
 ];
 
 export const SAFARI_EXPERIENCES = [
-  { icon: 'Car', title: 'Private 4×4 game drives', text: 'Your own jeep, tracker and naturalist — no shared vehicles, no rushing.' },
+  { icon: 'Car', title: 'Private 4×4 game drives', text: 'Your own jeep, tracker and naturalist. No shared vehicles, no rushing.' },
   { icon: 'Tent', title: 'Luxury tented camps', text: 'Canvas suites with en-suite baths, bush dinners and campfires under the stars.' },
   { icon: 'Fish', title: 'Responsible whale watching', text: 'Small vessels, marine biologists on board and strict distance rules.' },
-  { icon: 'Bird', title: 'Birding with experts', text: '34 endemic species — we pair you with an ornithologist for the best chances.' },
+  { icon: 'Bird', title: 'Birding with experts', text: '34 endemic species. We pair you with an ornithologist for the best chances.' },
   { icon: 'Moon', title: 'Night walks', text: 'Rainforest after dark: tree frogs, lorises and glowing fungi.' },
   { icon: 'Leaf', title: 'Conservation visits', text: 'Meet the people protecting elephants, turtles and leopards.' },
 ];
@@ -40,7 +40,7 @@ export const SAFARI_EXPERIENCES = [
 // ── Cultural Escapes ─────────────────────────────────────────
 export const FESTIVALS = [
   { month: 'January', name: 'Duruthu Perahera', place: 'Kelaniya', text: 'A torch-lit procession celebrating the Buddha’s first visit to Sri Lanka.' },
-  { month: 'January', name: 'Thai Pongal', place: 'Jaffna & the east', text: 'The Tamil harvest festival — sweet rice boiled over as an offering to the sun.' },
+  { month: 'January', name: 'Thai Pongal', place: 'Jaffna & the east', text: 'The Tamil harvest festival: sweet rice boiled over as an offering to the sun.' },
   { month: 'April', name: 'Sinhala & Tamil New Year', place: 'Island-wide', text: 'Auspicious times, family feasts, oil lamps and village games.' },
   { month: 'May', name: 'Vesak', place: 'Island-wide', text: 'Lanterns, illuminated pandals and free food stalls mark the Buddha’s birth, enlightenment and passing.' },
   { month: 'June', name: 'Poson', place: 'Anuradhapura & Mihintale', text: 'Pilgrims in white celebrate the arrival of Buddhism on the island.' },
@@ -160,15 +160,20 @@ export const STAY_PROMISES = [
 ];
 
 // ── About ────────────────────────────────────────────────────
+export const ABOUT_STORY = [
+  'In Sri Lanka the peacock (monara) is a symbol of grace, pride and beauty. Its feathers carry every colour of our island: the teal of the ocean, the green of the tea hills, the gold of temple roofs and the orange of a south-coast sunset.',
+  'Sasoba was founded on the same idea. Every journey should unfold like a peacock’s fan: layered, colourful and full of moments that make you stop and stare.',
+];
+
 export const ABOUT_VALUES = [
-  { icon: 'Heart', title: 'Genuine hospitality', text: 'Sri Lankans say “Ayubowan” — may you live long. We treat every traveller as a guest in our home.' },
+  { icon: 'Heart', title: 'Genuine hospitality', text: 'Sri Lankans say “Ayubowan”, meaning “may you live long”. We treat every traveller as a guest in our home.' },
   { icon: 'Compass', title: 'Truly tailor-made', text: 'No fixed departures, no group coaches. Every day is planned around you.' },
   { icon: 'Leaf', title: 'Travel that gives back', text: 'Community-run experiences, carbon offsetting and conservation partners.' },
   { icon: 'ShieldCheck', title: 'Licensed & safe', text: 'SLTDA-licensed guides, insured vehicles and 24/7 support.' },
 ];
 
 export const ABOUT_STEPS = [
-  { title: 'Tell us your dream', text: 'Share your dates, interests and travel style — by form, WhatsApp or a video call.' },
+  { title: 'Tell us your dream', text: 'Share your dates, interests and travel style by form, WhatsApp or a video call.' },
   { title: 'Receive your proposal', text: 'A journey designer sends a hand-crafted itinerary within 24 hours.' },
   { title: 'Refine together', text: 'We adjust hotels, pace and experiences until it feels perfect.' },
   { title: 'Travel with confidence', text: 'Your chauffeur-guide meets you at arrivals; our concierge is on call 24/7.' },

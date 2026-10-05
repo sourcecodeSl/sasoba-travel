@@ -22,7 +22,7 @@ const BADGES = {
 
 export default function PackageCard({ pkg, featured = false, matched = false, onOpen }) {
   const { formatPrice } = useLocale();
-  const badge = BADGES[pkg.badge];
+  const badge = BADGES[pkg.badge] || BADGES.Exclusive;
 
   // Subtle parallax: image drifts opposite the cursor.
   const mx = useMotionValue(0);
@@ -77,13 +77,15 @@ export default function PackageCard({ pkg, featured = false, matched = false, on
               <CalendarDays className="h-3.5 w-3.5 text-sun" />
               {pkg.days} days / {pkg.days - 1} nights
             </span>
-            <span className="inline-flex items-center gap-1.5">
-              <MapPin className="h-3.5 w-3.5 text-sun" />
-              {pkg.route.join(' · ')}
-            </span>
+            {pkg.route.length > 0 && (
+              <span className="inline-flex min-w-0 items-center gap-1.5">
+                <MapPin className="h-3.5 w-3.5 shrink-0 text-sun" />
+                <span className="truncate">{pkg.route.join(' · ')}</span>
+              </span>
+            )}
           </div>
 
-          <h3 className={`mt-3 font-display leading-[1.05] font-semibold text-white ${featured ? 'text-4xl sm:text-5xl' : 'text-3xl'}`}>
+          <h3 className={`mt-3 line-clamp-3 font-display leading-[1.05] font-semibold break-words text-white ${featured ? 'text-4xl sm:text-5xl' : 'text-3xl'}`}>
             {pkg.title}
           </h3>
 
@@ -105,11 +107,18 @@ export default function PackageCard({ pkg, featured = false, matched = false, on
               <div className="flex items-center gap-2">
                 <Stars rating={pkg.rating} className="h-3.5 w-3.5" />
                 <span className="text-xs text-white/70">
-                  {pkg.rating.toFixed(1)} · {pkg.reviews} reviews
+                  {pkg.rating.toFixed(1)}
+                  {pkg.reviews > 0 && ` · ${pkg.reviews} reviews`}
                 </span>
               </div>
               <p className="mt-1.5 text-xs uppercase tracking-widest text-white/50">
-                From <span className="font-display text-2xl font-semibold tracking-normal text-white normal-case">{formatPrice(pkg.priceFrom)}</span> pp
+                {pkg.priceFrom > 0 ? (
+                  <>
+                    From <span className="font-display text-2xl font-semibold tracking-normal text-white normal-case">{formatPrice(pkg.priceFrom)}</span> pp
+                  </>
+                ) : (
+                  'Price on request'
+                )}
               </p>
             </div>
             <button
