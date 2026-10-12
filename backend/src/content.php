@@ -76,13 +76,22 @@ function row_to_api(array $def, array $row): array
     $out = ['id' => (int) $row['id']];
     foreach ($def['fields'] as $key => $type) {
         $v = $row[snake($key)] ?? null;
-        $out[$key] = match ($type) {
-            'int' => $v === null ? null : (int) $v,
-            'num' => $v === null ? null : (float) $v,
-            'bool' => (bool) $v,
-            'json' => $v === null || $v === '' ? null : json_decode($v, true),
-            default => $v,
-        };
+        // switch instead of match: the live host runs PHP 7.4
+        switch ($type) {
+            case 'int':
+                $v = $v === null ? null : (int) $v;
+                break;
+            case 'num':
+                $v = $v === null ? null : (float) $v;
+                break;
+            case 'bool':
+                $v = (bool) $v;
+                break;
+            case 'json':
+                $v = $v === null || $v === '' ? null : json_decode($v, true);
+                break;
+        }
+        $out[$key] = $v;
     }
     $out['sortOrder'] = (int) $row['sort_order'];
     $out['published'] = (bool) $row['is_published'];
@@ -169,7 +178,7 @@ function ensure_unique_slug(string $table, array $row, ?int $exceptId): void
 
 // ── Admin collection handlers ────────────────────────────────
 
-function collection_list(string $name): never
+function collection_list(string $name): void
 {
     require_admin();
     $def = collection_def($name);
@@ -185,13 +194,13 @@ function collection_list(string $name): never
     json_out(['items' => array_map(fn ($r) => row_to_api($def, $r), $stmt->fetchAll())]);
 }
 
-function collection_get(string $name, int $id): never
+function collection_get(string $name, int $id): void
 {
     require_admin();
     json_out(['item' => row_to_api(collection_def($name), find_row($name, $id))]);
 }
 
-function collection_create(string $name): never
+function collection_create(string $name): void
 {
     require_admin();
     $def = collection_def($name);
@@ -204,7 +213,7 @@ function collection_create(string $name): never
     json_out(['item' => row_to_api($def, find_row($name, (int) db()->lastInsertId()))], 201);
 }
 
-function collection_update(string $name, int $id): never
+function collection_update(string $name, int $id): void
 {
     require_admin();
     $def = collection_def($name);
@@ -218,7 +227,7 @@ function collection_update(string $name, int $id): never
     json_out(['item' => row_to_api($def, find_row($name, $id))]);
 }
 
-function collection_delete(string $name, int $id): never
+function collection_delete(string $name, int $id): void
 {
     require_admin();
     collection_def($name);
@@ -227,7 +236,7 @@ function collection_delete(string $name, int $id): never
     json_out(['ok' => true]);
 }
 
-function collection_reorder(string $name): never
+function collection_reorder(string $name): void
 {
     require_admin();
     collection_def($name);
@@ -254,7 +263,7 @@ function read_setting(string $key)
     return $v === false ? null : json_decode($v, true);
 }
 
-function setting_get(string $key): never
+function setting_get(string $key): void
 {
     require_admin();
     if (!in_array($key, SETTINGS, true)) {
@@ -263,7 +272,7 @@ function setting_get(string $key): never
     json_out(['value' => read_setting($key)]);
 }
 
-function setting_put(string $key): never
+function setting_put(string $key): void
 {
     require_admin();
     if (!in_array($key, SETTINGS, true)) {
@@ -311,7 +320,7 @@ function enquiry_to_api(array $r): array
 }
 
 /** Public: "Plan your trip" form submissions. */
-function enquiry_submit(): never
+function enquiry_submit(): void
 {
     $in = body();
     // Honeypot field — real visitors never see or fill it.
@@ -353,7 +362,7 @@ function enquiry_submit(): never
     json_out(['ok' => true], 201);
 }
 
-function enquiry_list(): never
+function enquiry_list(): void
 {
     require_admin();
     $where = [];
@@ -379,7 +388,7 @@ function enquiry_list(): never
     json_out(['items' => array_map('enquiry_to_api', $stmt->fetchAll()), 'counts' => $counts]);
 }
 
-function enquiry_update(int $id): never
+function enquiry_update(int $id): void
 {
     require_admin();
     find_row('enquiries', $id);
@@ -403,7 +412,7 @@ function enquiry_update(int $id): never
     json_out(['item' => enquiry_to_api(find_row('enquiries', $id))]);
 }
 
-function enquiry_delete(int $id): never
+function enquiry_delete(int $id): void
 {
     require_admin();
     find_row('enquiries', $id);
@@ -413,7 +422,7 @@ function enquiry_delete(int $id): never
 
 // ── Uploads ──────────────────────────────────────────────────
 
-function upload_image(): never
+function upload_image(): void
 {
     require_admin();
     $file = $_FILES['file'] ?? null;
@@ -441,7 +450,7 @@ function upload_image(): never
 
 // ── Public content & dashboard ───────────────────────────────
 
-function public_content(): never
+function public_content(): void
 {
     $out = [];
     foreach (COLLECTIONS as $name => $def) {
@@ -462,7 +471,7 @@ function public_content(): never
     json_out($out);
 }
 
-function dashboard_stats(): never
+function dashboard_stats(): void
 {
     require_admin();
     $counts = [];

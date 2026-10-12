@@ -41,7 +41,7 @@ function db(): PDO
 
 // ── HTTP helpers ─────────────────────────────────────────────
 
-function json_out($data, int $status = 200): never
+function json_out($data, int $status = 200): void
 {
     http_response_code($status);
     header('Content-Type: application/json; charset=utf-8');
@@ -49,7 +49,7 @@ function json_out($data, int $status = 200): never
     exit;
 }
 
-function fail(string $message, int $status = 400, array $extra = []): never
+function fail(string $message, int $status = 400, array $extra = []): void
 {
     json_out(['error' => $message] + $extra, $status);
 }

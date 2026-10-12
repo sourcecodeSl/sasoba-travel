@@ -66,14 +66,14 @@ function validate_password(string $password): void
 
 // ── Route handlers ───────────────────────────────────────────
 
-function auth_status(): never
+function auth_status(): void
 {
     $count = (int) db()->query('SELECT COUNT(*) FROM admins')->fetchColumn();
     json_out(['needsSetup' => $count === 0]);
 }
 
 /** Creates the very first admin account. Disabled once any admin exists. */
-function auth_setup(): never
+function auth_setup(): void
 {
     rate_limit('setup', 10, 15);
     if ((int) db()->query('SELECT COUNT(*) FROM admins')->fetchColumn() > 0) {
@@ -94,7 +94,7 @@ function auth_setup(): never
     json_out(issue_token($id, false) + ['admin' => public_admin($admin)], 201);
 }
 
-function auth_login(): never
+function auth_login(): void
 {
     $in = body();
     $email = strtolower(str_clean($in['email'] ?? '', 190));
@@ -127,12 +127,12 @@ function auth_login(): never
     json_out(issue_token((int) $admin['id'], !empty($in['remember'])) + ['admin' => public_admin($admin)]);
 }
 
-function auth_me(): never
+function auth_me(): void
 {
     json_out(['admin' => public_admin(require_admin())]);
 }
 
-function auth_logout(): never
+function auth_logout(): void
 {
     $token = bearer_token();
     if ($token) {
@@ -141,7 +141,7 @@ function auth_logout(): never
     json_out(['ok' => true]);
 }
 
-function auth_update_account(): never
+function auth_update_account(): void
 {
     $admin = require_admin();
     $in = body();
